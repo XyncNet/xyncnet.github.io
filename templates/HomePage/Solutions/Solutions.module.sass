@@ -1,0 +1,96 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    margin-bottom: 280px
+    +d
+        margin-bottom: 130px
+    +m
+        margin-bottom: 80px
+
+.head
+    margin-bottom: 80px
+    text-align: center
+    +m
+        margin-bottom: 48px
+        text-align: left
+
+.title
+    margin-bottom: 16px
+
+.info
+    +body1
+    color: $n3
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -40px -20px 0
+    +m
+        display: block
+        margin: 0
+
+.card
+    flex: 0 0 calc(33.333% - 40px)
+    width: calc(33.333% - 40px)
+    margin: 40px 20px 0
+    padding: 32px
+    +t
+        flex: 0 0 calc(50% - 40px)
+        width: calc(50% - 40px)
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 40px
+
+.inner
+    align-items: flex-start
+
+.icon
+    margin-bottom: 36px
+    font-size: 0
+
+.subtitle
+    margin-bottom: 16px
+
+.content
+    margin-bottom: 34px
+
+.status
+    margin-top: auto
+
+.image
+    position: absolute
+    z-index: 3
+    pointer-events: none
+    font-size: 0
+    &:nth-child(1)
+        top: -358px
+        left: calc(50% - 850px)
+        z-index: 1
+        +xl
+            left: calc(50% - 770px)
+        +w
+            top: -390px
+            left: -192px
+        +m
+            display: none
+    &:nth-child(2)
+        top: -320px
+        right: calc(50% - 1285px)
+        +xl
+            right: calc(50% - 1205px)
+        +w
+            top: -220px
+            right: -386px
+            width: 798px
+        +d
+            display: none
+    &:nth-child(3)
+        left: calc(50% - 453px)
+        bottom: -274px
+        z-index: 2
+        +d
+            display: none
+        

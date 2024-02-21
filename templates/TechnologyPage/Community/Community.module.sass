@@ -1,0 +1,95 @@
+@import @/styles/helpers
+
+.wrap
+    margin-bottom: 80px
+    padding: 80px 40px
+    background: $n6
+    border-radius: 32px
+    +d
+        padding: 80px
+    +t
+        margin-bottom: 64px
+        padding: 48px 80px 64px
+    +m
+        margin-bottom: 16px
+        padding: 24px 24px 40px
+
+.row
+    display: flex
+    +t
+        display: block
+
+.row,
+.list
+    max-width: 1156px
+    margin: 0 auto
+    +xl
+        max-width: 996px
+    +w
+        max-width: 960px
+
+.details
+    margin-right: auto
+    +t
+        margin: 0 0 56px
+
+.title
+    +t
+        font-size: 60px
+        line-height: 72px
+    +m
+        font-size: 40px
+        line-height: 48px
+
+.info
+    margin-top: 16px
+    +body1
+    color: $n3
+
+.socials
+    margin: 16px 0 0 40px
+    +t
+        margin: 0
+
+.social
+    &:not(:last-child)
+        +m
+            margin-right: auto
+
+.list
+    +d
+        padding: 0 80px
+    +t
+        padding: 0
+
+.item
+    display: flex
+    padding: 64px 0
+    +t
+        display: block
+        padding: 40px 0
+    &:not(:last-child)
+        border-bottom: 1px solid $n6
+
+.value
+    margin-right: auto
+    +t
+        margin-right: 0
+        font-size: 60px
+        line-height: 72px
+    +m
+        font-size: 48px
+        line-height: 60px
+
+.content
+    max-width: 578px
+    margin-left: 32px
+    +body1
+    color: $n3
+    +d
+        max-width: 560px
+    +t
+        max-width: 100%
+        margin: 32px 0 0
+    +m
+        margin-top: 18px

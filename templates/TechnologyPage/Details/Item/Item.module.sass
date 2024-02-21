@@ -1,0 +1,109 @@
+@import @/styles/helpers
+
+.item
+    display: flex
+    justify-content: space-between
+    +t
+        display: block
+
+.wrap
+    flex-grow: 1
+
+.content
+    h2
+        margin-bottom: 32px
+
+.blockquote
+    margin-top: 80px
+
+.preview
+    position: relative
+    flex-shrink: 0
+    width: 497px
+    margin-bottom: 24px
+    box-shadow: 0px 32px 38px -10px rgba(0, 0, 0, 0.25)
+    font-size: 0
+    +t
+        margin: 72px auto 0
+    +m
+        max-width: 450px
+        width: auto
+        margin-top: 32px
+    &:before
+        content: ""
+        position: absolute
+        left: 24px
+        right: 24px
+        bottom: -24px
+        z-index: -1
+        height: 120px
+        border-radius: 24px
+        background: rgba($n6, .5)
+        +m
+            left: 16px
+            right: 16px
+            bottom: -16px
+
+.inner
+    position: relative
+    z-index: 1
+    background: $n6
+    clip-path: url(#polygonImage)
+    border-radius: 32px
+    +m
+        border-radius: 20px
+
+.square
+    position: absolute
+    top: 8px
+    right: 8px
+    width: 80px
+    height: 80px
+    border-radius: 24px
+    +m
+        top: 5px
+        right: 5px
+        border-radius: 16px
+
+.blockquote
+    position: relative
+    padding-left: 58px
+    +m
+        padding-left: 24px
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        width: 2px
+        border-radius: 1px
+        background: $c1s1
+
+.comment
+    margin-bottom: 24px
+    line-height: 42px
+
+.author
+    display: flex
+    align-items: center
+
+.avatar
+    position: relative
+    flex-shrink: 0
+    width: 64px
+    height: 64px
+    margin-right: 16px
+    border-radius: 50%
+    overflow: hidden
+    img
+        border-radius: 50%
+
+.name
+    margin-bottom: 4px
+    +baseB
+
+.position
+    +base
+    color: $n5
+    

@@ -1,0 +1,157 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    padding: 120px 0
+    +t
+        padding: 28px 0 0
+
+.container
+    max-width: 1136px
+
+.head
+    margin: 0 -48px 95px
+    text-align: center
+    +w
+        margin: 0 -8px 120px
+        text-align: left
+    +d
+        margin: 0 0 80px
+    +m
+        margin-bottom: 40px
+        padding: 0 16px
+
+.title
+    margin-bottom: 16px
+
+.info
+    +body1
+    color: $n3
+
+.list
+    margin: -56px -28px 0
+    +w
+        margin: -56px 8px 0
+    +d
+        margin: -56px -28px 0
+    +t
+        margin: -32px -16px 0
+    +m
+        margin: 0
+    &:after
+        content: ""
+        clear: both
+        display: table
+        +m
+            display: none
+
+.card
+    float: left
+    width: calc(50% - 56px)
+    margin: 56px 28px 0
+    padding: 72px 40px 40px
+    +t
+        width: calc(50% - 32px)
+        margin: 32px 16px 0
+    +m
+        float: none
+        width: 100%
+        margin: 0
+    &:nth-child(2)
+        margin-top: 232px
+        +t
+            margin-top: 208px
+        +m
+            margin-top: 0
+    &:nth-child(2n)
+        float: right
+        +m
+            float: none
+    &:not(:last-child)
+        +m
+            margin-bottom: 32px
+    &:hover
+        .arrow
+            fill: $n2
+
+.preview
+    position: relative
+    width: 210px
+    height: 210px
+    margin-bottom: 18px
+
+.inner
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 348px
+    transform: translate(-55%,-57%)
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%
+
+.subtitle
+    margin-bottom: 16px
+    +t
+        word-break: break-all
+
+.content
+    margin-bottom: 54px
+
+.foot
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.arrow
+    fill: $n5
+    transition: fill .3s
+
+.more
+    +text-button
+
+.image
+    position: absolute
+    pointer-events: none
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%
+    &:nth-child(1)
+        top: 10.2%
+        left: calc(50% - 852px)
+        z-index: -1
+        width: 450px
+        +xl
+            top: 9.5%
+            left: -50px
+            z-index: 4
+        +w
+            display: none
+    &:nth-child(2)
+        top: 51.7%
+        right: calc(50% - 975px)
+        width: 445px
+        +xl
+            right: -140px
+        +w
+            display: none
+    &:nth-child(3)
+        left: calc(50% - 885px)
+        bottom: -14.7%
+        width: 720px
+        +xl
+            left: -50px
+            bottom: -11.7%
+        +w
+            bottom: -10.3%
+            width: 600px
+        +d
+            bottom: -9%
+        +t
+            bottom: -250px
+            z-index: 2
+        +m
+            display: none
+

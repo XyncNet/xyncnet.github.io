@@ -1,0 +1,39 @@
+@import @/styles/helpers
+
+.wrapper
+    padding: 38px
+    background: $n6
+    border-radius: 16px
+    +m
+        padding: 38px 24px
+
+.list
+    display: flex
+    justify-content: center
+    +w
+        flex-wrap: wrap
+        max-width: 624px
+        margin: -64px auto 0
+    +m
+        margin: -64px -12px 0
+
+.item
+    +w
+        flex: 0 0 calc(33.333% - 64px)
+        margin: 64px 32px 0
+    +m
+        flex: 0 0 calc(50% - 24px)
+        margin: 65px 12px 0
+    &:not(:last-child)
+        margin-right: 64px
+        +w
+            margin-right: 32px
+        +m
+            margin-right: 12px
+
+.title
+    color: $n5
+    +w
+        margin-right: -16px
+    +m
+        margin-right: 0

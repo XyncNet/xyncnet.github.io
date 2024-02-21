@@ -1,0 +1,85 @@
+@import @/styles/helpers
+
+.container
+    display: flex
+    +t
+        display: block
+
+.col
+    &:nth-child(1)
+        max-width: 578px
+        margin-right: auto
+        +d
+            max-width: 526px
+        +t
+            max-width: 100%
+            margin: 0 0 86px
+        +m
+            margin-bottom: 64px
+    &:nth-child(2)
+        width: 491px
+        padding-top: 128px
+        +w
+            padding-top: 0
+        +d
+            margin-left: 56px
+        +t
+            width: 100%
+            margin-left: 0
+
+.title
+    margin-bottom: 32px
+    +m
+        margin-bottom: 22px
+
+.content
+    +body1
+    color: $n3
+
+.card
+    padding: 23px 24px 16px
+    box-shadow: none
+    &:hover
+        .arrow
+            fill: $n1
+    &:not(:last-child)
+        margin-bottom: 32px
+        +t
+            margin-bottom: 36px
+
+.inner
+    align-items: flex-start
+
+.subtitle
+    margin-bottom: 24px
+    color: $n4
+
+.status
+    margin-bottom: 8px
+
+.info
+    max-width: 300px
+    margin-bottom: 30px
+
+.line
+    display: flex
+    align-items: center
+    width: 100%
+
+.date
+    margin-right: auto
+    +caption
+    color: $n5
+
+.arrow
+    fill: $n5
+    transition: fill .3s
+
+.preview
+    margin: -80px 8px -8px -140px
+    pointer-events: none
+    +d
+        width: 800px
+    +t
+        display: none
+

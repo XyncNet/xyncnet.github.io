@@ -1,0 +1,88 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    z-index: 1
+    +m
+        padding: 72px 0
+
+.container
+    display: flex
+    align-items: center
+    height: 700px
+    +d
+        height: 620px
+    +t
+        height: 500px
+    +m
+        height: auto
+
+.wrap
+    position: relative
+    z-index: 3
+    width: 100%
+    text-align: center
+
+.title
+    margin-bottom: 16px
+
+.info
+    margin-bottom: 64px
+    +body1
+    color: $n3
+    +m
+        max-width: 230px
+        margin: 0 auto 64px
+    a
+        color: $c1
+        transition: color .2s
+        &:hover
+            color: $c1s1
+
+.images
+    position: absolute
+    top: 0px
+    left: 50%
+    bottom: 0
+    width: 1744px
+    transform: translateX(-50%)
+    pointer-events: none
+    font-size: 0
+    +d
+        width: 1550px
+    +t
+        width: 1240px
+    +m
+        display: none
+
+.image
+    &:nth-child(1)
+        position: relative
+        img
+            height: 100%
+    &:nth-child(2)
+        left: 1%
+        bottom: -1%
+        width: 30.2%
+    &:nth-child(3)
+        top: -15.5%
+        left: 13.8%
+        width: 16.8%
+    &:nth-child(4)
+        top: 16%
+        left: 36.5%
+        width: 27.4%
+    &:nth-child(5)
+        right: 16.4%
+        bottom: -16.2%
+        width: 14.2%
+    &:nth-child(6)
+        top: -22.6%
+        right: -2.3%
+        width: 35%
+    &:not(:first-child)
+        position: absolute
+        &:before
+            content: ""
+            display: block
+            padding-bottom: 100%

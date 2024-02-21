@@ -1,0 +1,99 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+
+.list
+    margin: -60px -30px 0
+    +w
+        margin: -60px 0 0
+    +d
+        margin: -60px -30px 0
+    +t
+        margin: -40px -20px 0
+    +m
+        margin: -40px 0 0
+    &:after
+        content: ""
+        clear: both
+        display: table
+        +m
+            display: none
+
+.card
+    float: left
+    width: calc(50% - 60px)
+    margin: 60px 30px 0
+    padding: 72px 40px 40px
+    +d
+        padding: 72px 24px 32px
+    +t
+        width: calc(50% - 40px)
+        margin: 40px 20px 0
+    +m
+        float: none
+        width: 100%
+        margin: 40px 0 0
+    &:nth-child(2)
+        margin-top: 174px
+        +t
+            margin-top: 148px
+        +m
+            margin-top: 40px
+    &:nth-child(2n)
+        float: right
+        +m
+            float: none
+    &:hover
+        img
+            transform: scale(1.05)
+        .arrow
+            fill: $n2
+
+.preview
+    position: relative
+    height: 312px
+    margin-bottom: 54px
+    background: $n2
+    border-radius: 24px
+    overflow: hidden
+    +d
+        margin-bottom: 32px
+    img
+        transition: transform .7s
+
+.subtitle
+    margin-bottom: 16px
+    +m
+        font-size: 24px
+        line-height: 28px
+
+.content
+    margin-bottom: 40px
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+    +d
+        margin-bottom: 32px
+    +t
+        -webkit-line-clamp: 4
+
+.foot
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.arrow
+    fill: $n5
+    transition: fill .3s
+
+.more
+    +text-button
+
+.btns
+    margin-top: 112px
+    text-align: center
+    +m
+        margin-top: 48px
+

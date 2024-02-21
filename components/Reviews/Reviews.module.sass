@@ -1,0 +1,67 @@
+@import @/styles/helpers
+
+.section
+    padding: 120px 0
+    background: $n6
+    +m
+        padding: 80px 0
+
+.container
+    +w
+        padding: 0 138px
+    +d
+        padding: 0 40px
+    +m
+        padding: 0 24px
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -68px -34px 0
+    +m
+        display: block
+        margin: 0
+
+.item
+    flex: 0 0 calc(33.333% - 68px)
+    width: calc(33.333% - 68px)
+    margin: 68px 34px 0
+    +w
+        flex: 0 0 calc(50% - 68px)
+        width: calc(50% - 68px)
+    +m
+        width: 100%
+        margin: 0
+    &:nth-child(n+2)
+        +m
+            display: none
+    &:nth-child(n+3)
+        +w
+            display: none
+
+.content
+    margin-bottom: 24px
+    +quote
+
+.line
+    display: flex
+    align-items: center
+
+.avatar
+    position: relative
+    flex-shrink: 0
+    width: 64px
+    height: 64px
+    margin-right: 16px
+    border-radius: 50%
+    overflow: hidden
+    img
+        border-radius: 50%
+
+.author
+    margin-bottom: 4px
+    +baseB
+
+.position
+    +base
+    color: $n5

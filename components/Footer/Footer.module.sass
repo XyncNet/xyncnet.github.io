@@ -1,0 +1,81 @@
+@import @/styles/helpers
+
+.footer
+    padding: 102px 0 64px
+    background: $n9
+    +t
+        position: relative
+        padding-top: 80px
+    +m
+        padding: 72px 0 64px
+
+.container
+    +m
+        padding: 0 40px
+
+.row
+    display: flex
+    align-items: center
+    +t
+        display: block
+    +m
+        display: flex
+        flex-direction: column-reverse
+        align-items: stretch
+    &:not(:last-child)
+        margin-bottom: 150px
+        +t
+            margin-bottom: 72px
+        +m
+            margin-bottom: 40px
+
+.logo
+    margin-right: auto
+
+.menu
+    display: flex
+    +t
+        display: none
+
+.link
+    +baseB
+    color: $n1
+    transition: color .2s
+    &:hover,
+    &.active
+        color: $c1
+    &:not(:last-child)
+        margin-right: 48px
+
+.copyright
+    margin-right: 48px
+    color: $n5
+    +t
+        margin-right: 0
+    +m
+        +caption
+
+.documents
+    display: flex
+    margin-right: auto
+    +d
+        display: none
+
+.document
+    color: $c1
+    transition: color .2s
+    &:hover
+        color: $c1s1
+    &:not(:last-child)
+        margin-right: 48px
+
+.socials
+    margin-left: auto
+    +t
+        position: absolute
+        top: 72px
+        right: 40px
+        margin-left: 0
+    +m
+        position: static
+        margin-bottom: 48px

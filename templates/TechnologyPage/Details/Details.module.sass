@@ -1,0 +1,41 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    +m
+        margin-bottom: 66px
+
+.item
+    &:nth-child(2n+1)
+        align-items: center
+        .wrap
+            padding-right: 82px
+            +d
+                padding-right: 46px
+            +t
+                padding-right: 0
+    &:nth-child(2n)
+        flex-direction: row-reverse
+        .wrap
+            padding: 80px 0 0 82px
+            +w
+                padding-left: 46px
+            +t
+                padding: 0
+    &:not(:last-child)
+        margin-bottom: 180px
+        +d
+            margin-bottom: 120px
+        +m
+            margin-bottom: 96px
+
+.image
+    position: absolute
+    right: calc(50% - 577px)
+    bottom: -250px
+    +w
+        right: -180px
+    +d
+        right: -350px
+    +t
+        display: none

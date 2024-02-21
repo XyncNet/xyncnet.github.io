@@ -1,0 +1,65 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    padding: 240px 0 198px
+    +w
+        padding: 208px 0 200px
+    +t
+        padding: 224px 0 220px
+    +m
+        padding: 147px 0 152px
+
+.wrap
+    max-width: 865px
+    margin: 0 auto
+    text-align: center
+
+.line
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+
+.status
+    margin-right: 12px
+
+.title
+    margin-bottom: 32px
+
+.info
+    margin-bottom: 32px
+    color: $n3
+
+.avatar
+    position: relative
+    display: inline-block
+    flex-shrink: 0
+    width: 64px
+    height: 64px
+    margin-bottom: 8px
+    border-radius: 50%
+    overflow: hidden
+    img
+        border-radius: 50%
+
+.author
+    margin-bottom: 4px
+    +baseB
+
+.position
+    +base
+    color: $n5
+
+.lines
+    position: absolute
+    top: -54.5%
+    left: 50%
+    z-index: -1
+    width: 2050px
+    transform: translateX(-49%)
+    font-size: 0
+    pointer-events: none
+    +w
+        top: -60%
+    +m
+        top: -63%

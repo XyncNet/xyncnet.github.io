@@ -1,0 +1,122 @@
+@import @/styles/helpers
+
+.section
+    padding-top: 120px
+    background: $n9
+    +t
+        padding-top: 0
+
+.list
+    margin-bottom: 120px
+    +m
+        margin-bottom: 0
+
+.item
+    display: flex
+    padding: 64px 0
+    +t
+        display: block
+    &:not(:last-child)
+        border-bottom: 1px solid $n6
+
+.subtitle
+    max-width: 305px
+    margin-right: auto
+    +t
+        max-width: 100%
+        margin: 0 0 24px
+
+.content
+    max-width: 578px
+    +body1
+    color: $n3
+    +t
+        max-width: 100%
+
+.comment
+    position: relative
+    padding: 184px 0 350px
+    text-align: center
+    +d
+        padding: 120px 60px 238px
+    +t
+        padding: 78px 16px 120px
+        overflow: hidden
+    +m
+        padding: 80px 0 120px
+
+.details
+    position: relative
+    z-index: 3
+
+.title
+    margin-bottom: 48px
+    +w
+        max-width: 1008px
+        margin: 0 auto 48px
+    +m
+        font-size: 24px
+        line-height: 28px
+
+.avatar
+    position: relative
+    display: inline-block
+    flex-shrink: 0
+    width: 64px
+    height: 64px
+    margin-bottom: 8px
+    border-radius: 50%
+    overflow: hidden
+    img
+        border-radius: 50%
+
+.author
+    margin-bottom: 4px
+    +baseB
+
+.position
+    +base
+    color: $n5
+
+.image
+    position: absolute
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%
+    &:nth-child(1)
+        top: -14%
+        left: 50%
+        width: 1036px
+        transform: translateX(-50%)
+        +w
+            top: -10.5%
+        +d
+            top: -22%
+        +t
+            top: -9%
+            width: 760px
+        +m
+            top: -4%
+    &:nth-child(2)
+        top: -38%
+        right: calc(50% - 960px)
+        width: 720px
+        +xl
+            right: calc(50% - 884px)
+        +w
+            top: -32%
+            right: -240px
+        +d
+            display: none
+    &:nth-child(3)
+        left: calc(50% - 975px)
+        bottom: -44%
+        width: 870px
+        +xl
+            left: calc(50% - 895px)
+        +w
+            left: -212px
+            bottom: -34.5%
+        +d
+            display: none

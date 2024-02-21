@@ -1,0 +1,43 @@
+@import @/styles/helpers
+
+.card
+    margin-bottom: 136px
+    padding: 24px 8px 8px
+    font-size: 0
+    +d
+        margin-bottom: 80px
+    +m
+        margin-bottom: 64px
+    .background
+        +t
+            clip-path: polygon(0 0, calc(100% - 45px) 0, calc(100% - 45px) 80px, 100% 80px, 100% 100%, 0 100% )
+    .square
+        border-radius: 8px
+    .corner
+        +t
+            width: 46px
+            height: 80px
+
+.caption
+    margin-bottom: 26px
+    padding: 0 60px 0 24px
+    +baseB
+    +t
+        padding-right: 40px
+    +m
+        padding: 2px 32px 0 4px
+
+.video
+    font-size: 0
+    video
+        width: 100%
+        border-radius: 12px
+        +m
+            min-height: 310px
+            object-fit: cover
+
+.content
+    max-width: 996px
+    margin: 0 auto
+    h3
+        margin-bottom: 50px

@@ -1,0 +1,40 @@
+[class^="button"]
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    padding: 3px
+    text-align: center
+    +button
+    color: $n1
+    &:before,
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+    &:before
+        left: 0
+        bottom: 0
+        width: calc(100% - 17px)
+        border-width: 2px 0 2px 2px
+        border-style: solid
+        border-color: $c1
+    &:after
+        right: 0
+        z-index: 2
+        width: 17px
+        height: 40px
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='40' viewBox='0 0 17 40'%3E%3Cpath d='M15.365 12.908l-.682.731h0l.682-.731zM3.192 1.538l.683-.731h0l-.683.731zM15 14.37v22.633h2V14.37h-2zm1.048-2.193L3.874.808 2.509 2.269l12.174 11.37 1.365-1.462zM0 2h1.827V0H0v2zm14 36.002H0v2h14v-2zm3-23.633a3 3 0 0 0-.952-2.193l-1.365 1.462a1 1 0 0 1 .317.731h2zm-2 22.633a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2zM3.874.808A3 3 0 0 0 1.827 0v2a1 1 0 0 1 .683.269L3.874.808z' fill='%23eb5be5'/%3E%3C/svg%3E") no-repeat 50% 50% / 100% auto
+    span
+        position: relative
+        z-index: 1
+        display: block
+        width: 100%
+        padding: 0 14px
+        border-radius: 1px
+        background: $c1s2
+        line-height: 34px
+        transition: background .2s
+    &:hover
+        span
+            background: lighten($c1s2, 3)

@@ -1,0 +1,59 @@
+.simplebar-track.simplebar-vertical
+    width: 8px
+    background: $n9
+    border-radius: 4px
+    .simplebar-scrollbar
+        width: 4px
+        &:before
+            top: 2px
+            left: 0
+            right: 0
+            bottom: 2px
+            background: $n7
+            border-radius: 2px
+        &.simplebar-visible
+            &:before
+                opacity: 1
+
+.simplebar-track.simplebar-horizontal
+    height: 8px
+    background: $n9
+    border-radius: 4px
+    .simplebar-scrollbar
+        height: 4px
+        &:before
+            top: 0
+            left: 2px
+            right: 2px
+            height: 4px
+            background: $n7
+            border-radius: 2px
+        &.simplebar-visible
+            &:before
+                opacity: 1
+
+.scrollbar-development
+    .simplebar-content
+        display: flex
+        &:before,
+        &:after
+            content: ""
+            flex-shrink: 0
+            display: block
+            width: 80px
+            +w
+                width: 40px
+            +m
+                width: 24px
+    .simplebar-track.simplebar-horizontal
+        left: 80px
+        right: 80px
+        +w
+            left: 40px
+            right: 40px
+        +m
+            left: 24px
+            right: 24px
+        .simplebar-scrollbar
+            &:before
+                opacity: 1

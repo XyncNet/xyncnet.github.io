@@ -1,0 +1,88 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    margin-top: -16px
+
+.container
+    +w
+        max-width: 100%
+        padding: 0 142px
+    +d
+        padding: 0 40px
+    +m
+        padding: 0 24px
+
+.row
+    display: flex
+    margin: 0 -69px
+    +xl
+        margin: 0 -40px
+    +t
+        display: block
+        margin: 0
+
+.col
+    flex: 0 0 calc(50% - 138px)
+    width: calc(50% - 138px)
+    margin: 0 69px
+    +xl
+        flex: 0 0 calc(50% - 80px)
+        width: calc(50% - 80px)
+        margin: 0 40px 
+    +t
+        width: 100%
+        margin: 0
+    &:not(:last-child)
+        +t
+            margin-bottom: 64px
+        +m
+            margin-bottom: 48px
+
+.col > .item,
+.line
+    &:not(:last-child)
+        margin-bottom: 56px
+        +x
+            margin-bottom: 32px
+
+.line
+    display: flex
+    margin: 0 -20px
+    +x
+        display: block
+        margin: 0
+    +t
+        display: flex
+        margin: 0 -20px
+    +m
+        display: block
+        margin: 0
+    .item
+        flex: 0 0 calc(50% - 40px)
+        margin: 0 20px
+        +x
+            margin: 0
+        +t
+            flex: 0 0 calc(50% - 40px)
+            margin: 0 20px
+        +m
+            margin: 0
+        &:not(:last-child)
+            +x
+                margin-bottom: 40px
+            +t
+                margin-bottom: 0
+            +m
+                margin-bottom: 32px
+
+.category
+    +caption
+    color: $n3
+
+.content
+    color: $n1
+
+.social
+    &:not(:last-child)
+        margin-right: 24px

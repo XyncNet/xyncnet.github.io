@@ -1,0 +1,61 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+
+.container
+    display: flex
+    +t
+        display: block
+
+.details
+    flex-shrink: 0
+    margin-right: auto
+    text-align: right
+    +t
+        margin: 0 0 48px
+        text-align: left
+    +m
+        margin-bottom: 60px
+
+.counter
+    +inter
+    font-size: 144px
+    line-height: 1
+    letter-spacing: -.02em
+    font-weight: 900
+    +m
+        font-size: 80px
+        line-height: 88px
+
+.info
+    color: $n3
+
+.wrap
+    max-width: 578px
+    +t
+        max-width: 100%
+
+.content
+    margin-bottom: 60px
+
+.image
+    position: absolute
+    left: calc(50% - 776px)
+    bottom: -230px
+    width: 600px
+    +w
+        left: calc(50% - 756px)
+    +d
+        left: -160px
+    +t
+        top: -242px
+        left: auto
+        right: -298px
+        bottom: auto
+    +m
+        display: none
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%

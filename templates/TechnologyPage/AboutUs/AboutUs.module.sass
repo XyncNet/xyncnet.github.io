@@ -1,0 +1,86 @@
+@import @/styles/helpers
+
+.row
+    position: relative
+    display: flex
+    
+.wrap
+    max-width: 578px
+    +d
+        max-width: 526px
+    +t
+        max-width: 100%
+
+.title
+    margin-bottom: 32px
+    +t
+        max-width: 600px
+
+.info
+    margin-bottom: 56px
+    +body1
+    color: $n3
+    +d
+        margin-bottom: 40px
+    +t
+        margin-bottom: 88px
+    +m
+        margin-bottom: 62px
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -32px -12px 56px
+    +d
+        margin-bottom: 40px
+    +t
+        margin-bottom: 64px
+    +m
+        display: block
+        margin: 0 0 48px
+
+.item
+    flex: 0 0 calc(50% - 24px)
+    width: calc(50% - 24px)
+    margin: 32px 12px 0
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 24px
+
+.number
+    margin-bottom: 24px
+    padding-bottom: 16px
+    border-bottom: 1px solid $n6
+    +m
+        margin-bottom: 16px
+
+.content
+    color: $n3
+
+.line
+    display: flex
+    align-items: center
+
+.button
+    margin-right: 32px
+
+.document
+    +karla
+    +body2
+    color: $c1
+    transition: color .2s
+    &:hover
+        color: $c1s1
+
+.preview
+    position: absolute
+    width: 712px
+    left: 50%
+    bottom: 48px
+    font-size: 0
+    +d
+        left: calc(50% + 32px)
+    +t
+        display: none

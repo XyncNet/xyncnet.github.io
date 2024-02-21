@@ -1,0 +1,114 @@
+@import @/styles/helpers
+
+.section
+    padding-top: 200px
+    text-align: center
+    +w
+        padding-top: 168px
+    +m
+        padding: 124px 0 12px
+
+.head
+    position: relative
+    z-index: 3
+    max-width: 774px
+    margin: 0 auto 834px
+    +t
+        margin-bottom: 866px
+    +m
+        margin-bottom: 396px
+
+.stage
+    margin-bottom: 20px
+    +tagline
+    color: $n5
+
+.title
+    margin-bottom: 20px
+
+.info
+    +body1
+
+.scroll
+    position: relative
+    z-index: 3
+
+.images
+    position: absolute
+    top: 50px
+    left: 50%
+    width: 1900px
+    transform: translateX(-50%)
+    font-size: 0
+    +w
+        top: 20px
+    +t
+        top: 100px
+        width: 1420px
+    +m
+        top: 300px
+        width: 810px
+
+.image
+    &:nth-child(1)
+        position: relative
+    &:nth-child(2)
+        top: 40.8%
+        left: 8.25%
+        width: 26.6%
+        +t
+            top: 43.3%
+            left: 3.25%
+            width: 26.6%
+    &:nth-child(3)
+        top: 24.5%
+        left: 19.6%
+        width: 14.2%
+        +t
+            top: 25%
+            left: 13.6%
+            width: 17%
+    &:nth-child(4)
+        top: 16%
+        left: 21%
+        width: 58%
+        +t
+            top: 17%
+            left: 16%
+            width: 68%
+        +m
+            top: 16.6%
+    &:nth-child(5)
+        top: -1.2%
+        right: 29.8%
+        width: 10.9%
+        +t
+            top: -.2%
+            right: 26.8%
+            width: 10.9%
+        +m
+            top: -1.2%
+            right: 25.7%
+            width: 12.5%
+    &:nth-child(6)
+        right: 22.3%
+        bottom: 22.2%
+        width: 12%
+        +t
+            right: 17.6%
+            bottom: 23.6%
+            width: 12%
+    &:nth-child(7)
+        top: 21.9%
+        right: 6.2%
+        width: 29.6%
+        +t
+            top: 25.9%
+            right: 1%
+            width: 29.6%
+    &:not(:first-child)
+        position: absolute
+        &:before
+            content: ""
+            display: block
+            padding-bottom: 100%

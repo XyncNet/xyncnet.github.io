@@ -1,0 +1,97 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+
+.container
+    padding: 0
+
+.title
+    max-width: 1280px
+    margin: 0 auto
+    padding: 0 40px
+    text-align: center
+    +w
+        max-width: 100%
+        text-align: left
+    +m
+        padding: 0 24px
+
+.list
+    display: flex
+    padding: 180px 0 40px
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    +m
+        padding: 120px 0 40px
+    &:before,
+    &:after
+        content: ""
+        flex-shrink: 0
+        display: block
+        width: 80px
+        +w
+            width: 40px
+        +m
+            width: 24px
+    &::-webkit-scrollbar
+        height: 8px
+    &::-webkit-scrollbar-track
+        margin: 0 80px
+        background-color: $n9
+        border: 2px solid $n9
+        border-radius: 4px
+        +w
+            margin: 0 40px
+        +m
+            margin: 0 24px
+    &::-webkit-scrollbar-thumb
+        background-color: $n7
+        border: 2px solid $n9
+        border-radius: 4px
+
+.card
+    flex-shrink: 0
+    width: 420px
+    padding: 0 40px 40px
+    +m
+        width: 310px
+    &:hover
+        .arrow
+            fill: $n2
+    &:not(:last-child)
+        margin-right: 40px
+        +m
+            margin-right: 16px
+
+.preview
+    position: relative
+    margin: -50% 0 -45px
+    pointer-events: none
+    +m
+        margin: -70% -48px -36px
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%
+
+.subtitle
+    margin-bottom: 16px
+    word-break: break-all
+
+.content
+    margin-bottom: 54px
+
+.foot
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: auto
+
+.arrow
+    fill: $n5
+    transition: fill .3s
+
+.more
+    +text-button
+

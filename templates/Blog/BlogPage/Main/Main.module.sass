@@ -1,0 +1,112 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    padding-top: 292px
+    +w
+        padding-top: 200px
+    +d
+        padding-top: 160px
+    +m
+        padding-top: 112px
+
+.container
+    position: relative
+    z-index: 2
+    display: flex
+    align-items: center
+    +w
+        padding: 0 76px
+    +t
+        display: block
+        padding: 0 40px 0 72px
+    +m
+        padding: 0 24px
+
+.preview
+    position: relative
+    flex-shrink: 0
+    width: 578px
+    height: 677px
+    font-size: 0
+    +xl
+        width: 636px
+        margin-left: -30px
+    +w
+        width: 524px
+        margin-left: 0
+    +t
+        width: 100%
+        margin: 0 0 48px
+    +m
+        height: 460px
+    img
+        border-radius: 20px
+    &:before
+        content: ""
+        position: absolute
+        top: 32px
+        right: 100%
+        bottom: 32px
+        width: 32px
+        border-radius: 32px 0 0 32px
+        background: $c1s1
+        +w
+            border-radius: 24px 0 0 24px
+        +m
+            display: none
+
+.wrap
+    flex-grow: 1
+    padding-left: 74px
+    +w
+        margin-right: -40px
+        padding-left: 78px
+    +d
+        padding-left: 48px
+    +t
+        margin-right: 0
+        padding-left: 0
+
+.stage
+    margin-bottom: 20px
+    +tagline
+    color: $n5
+
+.title
+    margin-bottom: 32px
+    +w
+        font-size: 60px
+        line-height: 72px
+    +d
+        font-size: 48px
+        line-height: 60px
+
+.content
+    margin-bottom: 32px
+    +body1
+
+.lines
+    position: absolute
+    top: -26.5%
+    left: calc(50% - 1538px)
+    z-index: -1
+    width: 2050px
+    font-size: 0
+    pointer-events: none
+    +xl
+        top: -26.5%
+        left: -57%
+    +w
+        top: -11%
+        left: -60%
+        width: 1600px
+    +d
+        top: -16%
+        left: -70%
+    +t
+        top: -16%
+        left: -110%
+        width: 1800px
+    +m
+        display: none

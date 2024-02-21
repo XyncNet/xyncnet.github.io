@@ -1,0 +1,91 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    padding: 394px 0 104px
+    +w
+        padding-top: 230px
+    +t
+        padding-top: 214px
+    +m
+        padding: 144px 0 322px
+        overflow: hidden
+    .scroll
+        +m
+            display: none
+
+.wrap
+    position: relative
+    z-index: 2
+    max-width: 500px
+    +w
+        max-width: 472px
+    +t
+        max-width: 382px
+    +m
+        margin: 0 auto
+        text-align: center
+
+.stage
+    margin-bottom: 20px
+    +tagline
+    color: $n5
+
+.title
+    margin-bottom: 20px
+
+.info
+    margin-bottom: 472px
+    +body1
+    color: $n1
+    +w
+        margin-bottom: 168px
+    +t
+        margin-bottom: 116px
+    +m
+        margin-bottom: 0
+
+.images
+    position: absolute
+    top: -332px
+    right: calc(50% - 1316px)
+    width: 1900px
+    font-size: 0
+    +xl
+        right: calc(50% - 1236px)
+    +w
+        top: -302px
+        right: -448px
+        width: 1630px
+    +d
+        top: -252px
+        right: -448px
+        width: 1400px
+    +t
+        top: -120px
+        right: calc(50% - 800px)
+        width: 980px
+    +m
+        top: auto
+        right: 50%
+        bottom: -360px
+        transform: translateX(50%)
+
+.image
+    &:before
+        content: ""
+        display: block
+        padding-bottom: 100%
+    &:nth-child(2)
+        top: 15.9%
+        left: 21%
+        width: 58%
+        +w
+            top: 17.2%
+            left: 21.6%
+            width: 56%
+        +d
+            top: 18%
+    &:not(:first-child)
+        position: absolute
+

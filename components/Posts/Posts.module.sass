@@ -1,0 +1,141 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    &.background
+        padding: 128px 0 140px
+        background: $n6
+        +t
+            padding: 80px 0
+        .backgroundCard
+            background: $n8
+        .corner
+            fill: $n8
+
+.row
+    display: flex
+    +d
+        margin: 0 -24px
+    +t
+        display: block
+        margin: 0
+
+.wrap
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    flex-grow: 1
+    padding: 24px 64px 24px 0
+    +d
+        flex: 0 0 calc(50% - 48px)
+        width: calc(50% - 48px)
+        margin: 0 24px
+        padding: 0 0 74px
+    +t
+        width: 100%
+        margin: 0 0 64px
+        padding: 0
+
+.title
+    margin-bottom: 32px
+
+.info
+    margin-bottom: 40px
+    +body1
+    color: $n3
+    +t
+        margin-bottom: 48px
+    +m
+        margin-bottom: 34px
+
+.button
+    margin-top: auto
+
+.list
+    flex-shrink: 0
+    width: 558px
+    +d
+        flex: 0 0 calc(50% - 48px)
+        width: calc(50% - 48px)
+        margin: 0 24px
+    +t
+        width: auto
+        margin: 0
+
+.card
+    border-radius: 24px
+    overflow: hidden
+    +m
+        box-shadow: none
+    &:hover
+        .arrow
+            fill: $n1
+    &:not(:last-child)
+        margin-bottom: 32px
+    .corner
+        +m
+            top: auto
+            bottom: 0
+            transform: scaleY(-1)
+    .square
+        +m
+            top: auto !important
+            bottom: 8px
+
+.backgroundCard
+    +m
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), calc(100% - 77px) calc(100% - 100px), calc(100% - 77px) 100%, 0 100%) !important
+
+.inner
+    display: flex
+    flex-direction: row
+    +m
+        flex-direction: column
+
+.preview,
+.details
+    flex: 0 0 50%
+    +m
+        flex: 0 0 auto
+
+.preview
+    position: relative
+    +m
+        height: 190px
+
+.details
+    padding: 22px 24px 16px
+
+.status
+    margin-bottom: 6px
+    background: $c1s3
+    +m
+        margin-bottom: 8px
+
+.subtitle
+    margin-bottom: 30px
+
+.line
+    display: flex
+    align-items: center
+    +m
+        padding-right: 70px
+
+.date
+    margin-right: auto
+    +caption
+    color: $n5
+
+.arrow
+    fill: $n5
+    transition: fill .3s
+
+.image
+    position: absolute
+    top: 7.1%
+    left: calc(50% - 1056px)
+    width: 620px
+    pointer-events: none
+    font-size: 0
+    +w
+        display: none
