@@ -57,10 +57,10 @@ export const footerNavigation = [
 export const documents = [
     {
         title: "Privacy policy",
-        url: "/",
+        url: "/privacy-policy.pdf",
     },
     {
         title: "Terms of use",
-        url: "/",
+        url: "/terms-of-service.pdf",
     },
 ];

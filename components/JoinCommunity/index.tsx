@@ -28,13 +28,13 @@ const JoinCommunity = ({ title }: JoinCommunityProps) => (
                         target="_blank"
                         rel="noreferrer"
                     >
-                        how to build on Xync
+                        how to earn on XyncNet
                     </a>
                     .
                 </div>
                 <a
                     className={cn("button", styles.button)}
-                    href="https://xyncnet.github.io/"
+                    href="https://t.me/+KHg4dicUkWBjOTUy"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

@@ -46,7 +46,7 @@ const Footer = ({}: FooterProps) => (
                 </div>
                 <div className={styles.documents}>
                     {documents.map((document, index) => (
-                        <Link href={document.url} key={index}  className={styles.document}>
+                        <Link href={document.url} key={index}  className={styles.document} target={"_blank"}>
                             {document.title}
                         </Link>
                     ))}
