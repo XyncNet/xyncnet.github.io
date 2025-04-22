@@ -26,32 +26,32 @@ const Details = ({ scrollToRef }: DetailsProps) => {
                     <div className={styles.col}>
                         <div className={styles.item}>
                             <div className={styles.category}>Support</div>
-                            <Link href="mailto:hello@xync.net" className={cn("h5", styles.content)}>
-                                hello@xync.net
+                            <Link href="mailto:support@xync.net" className={cn("h5", styles.content)}>
+                                support@xync.net
                             </Link>
                         </div>
                         <div className={styles.line}>
                             <div className={styles.item}>
                                 <div className={styles.category}>Address 1</div>
                                 <div className={cn("h5", styles.content)}>
-                                    <p>4955 Serenity Unions</p>
-                                    <p>Oregon</p>
-                                    <p>Cambridgeshire</p>
+                                    <p>1199 Soi Ari 1, Phaya Thai</p>
+                                    <p>Bangkok</p>
+                                    <p>Thailand</p>
                                 </div>
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.category}>Address 2</div>
                                 <div className={cn("h5", styles.content)}>
                                     <p>4955 Serenity Unions</p>
-                                    <p>Oregon</p>
                                     <p>Dubai</p>
+                                    <p>UAE</p>
                                 </div>
                             </div>
                         </div>
                         <div className={styles.item}>
                             <div className={styles.category}>Phone number</div>
-                            <Link href="tel:+44987456321" className={cn("h5", styles.content)}>
-                                +44 987 456 321
+                            <Link href="tel:+660980018735" className={cn("h5", styles.content)}>
+                                +66 098 001 8735
                             </Link>
                         </div>
                         <Socials

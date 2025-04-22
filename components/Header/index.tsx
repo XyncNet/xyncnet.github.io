@@ -41,7 +41,7 @@ const Header = ({}: HeaderProps) => {
                 />
                 <a
                     className={cn("button", styles.button)}
-                    href="https://app.xync.net"
+                    href="https://t.me/XyncNetBot/test"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
