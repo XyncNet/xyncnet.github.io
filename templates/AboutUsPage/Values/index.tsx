@@ -39,9 +39,14 @@ const Values = ({}: ValuesProps) => (
                         build scalable user-friendly dApps with low transaction
                         fees without ever sacrificing on security.
                     </div>
-                    <button className={cn("button", styles.button)}>
+                    <a
+                      className={cn("button", styles.button)}
+                      href="https://t.me/XyncNetBot/test"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <span>launch app</span>
-                    </button>
+                    </a>
                 </div>
                 <div className={styles.col}>
                     <div className={styles.list}>

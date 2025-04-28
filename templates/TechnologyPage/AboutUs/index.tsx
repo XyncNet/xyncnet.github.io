@@ -32,9 +32,14 @@ const AboutUs = ({}: AboutUsProps) => (
                         ))}
                     </div>
                     <div className={styles.line}>
-                        <button className={cn("button", styles.button)}>
+                        <a
+                          className={cn("button", styles.button)}
+                          href="https://t.me/XyncNetBot/test"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                             <span>launch app</span>
-                        </button>
+                        </a>
                         <button className={styles.document}>
                             Read the docs
                         </button>
@@ -42,10 +47,10 @@ const AboutUs = ({}: AboutUsProps) => (
                 </div>
                 <div className={styles.preview}>
                     <Image
-                        src="/images/about-pic-2.png"
-                        width={712}
-                        height={682}
-                        alt="Figure"
+                      src="/images/about-pic-2.png"
+                      width={712}
+                      height={682}
+                      alt="Figure"
                     />
                 </div>
             </div>

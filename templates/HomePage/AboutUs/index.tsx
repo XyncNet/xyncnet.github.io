@@ -15,22 +15,27 @@ const AboutUs = ({}: AboutUsProps) => (
                         <div className={cn("content", styles.content)}>
                             {item.content}
                         </div>
-                        <div className={styles.line}>
-                            <button className={cn("button", styles.button)}>
-                                <span>launch app</span>
-                            </button>
-                            <button className={styles.document}>
-                                Read the docs
-                            </button>
-                        </div>
+                      <div className={styles.line}>
+                        <a
+                          className={cn("button", styles.button)}
+                          href="https://t.me/XyncNetBot/test"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span>launch app</span>
+                        </a>
+                        <button className={styles.document}>
+                          Read the docs
+                        </button>
+                      </div>
                     </div>
-                    <div className={styles.preview}>
-                        <Image
-                            src={item.image.src}
-                            width={item.image.width}
-                            height={item.image.height}
-                            alt={item.image.alt}
-                        />
+                  <div className={styles.preview}>
+                    <Image
+                      src={item.image.src}
+                      width={item.image.width}
+                      height={item.image.height}
+                      alt={item.image.alt}
+                    />
                     </div>
                 </div>
             ))}
