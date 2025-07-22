@@ -15,19 +15,16 @@ const images = [
 
 type MainProps = {
     scrollToRef: any;
+    t: any;
 };
 
-const Main = ({ scrollToRef }: MainProps) => (
+const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
-                <div className={styles.stage}>XYNCRONIZED PAYMENTS NETWORK</div>
-                <div className={cn("h1", styles.title)}>
-                    Global platform for bank&nbsp;and crypto currency transfers.
-                </div>
-                <div className={styles.info}>
-                    Global platform for bank and crypto currency transfers
-                </div>
+                <div className={styles.stage}>{t("title")}</div>
+                <div className={cn("h1", styles.title)}>{t("description")}</div>
+                <div className={styles.info}>{t("info")}</div>
             </div>
             <div className={styles.images}>
                 <div className={styles.image}>

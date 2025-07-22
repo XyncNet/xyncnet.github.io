@@ -45,7 +45,7 @@ const Values = ({}: ValuesProps) => (
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                        <span>launch app</span>
+                        <span>app</span>
                     </a>
                 </div>
                 <div className={styles.col}>

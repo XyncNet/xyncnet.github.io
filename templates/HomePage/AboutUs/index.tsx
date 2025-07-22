@@ -22,7 +22,7 @@ const AboutUs = ({}: AboutUsProps) => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span>launch app</span>
+                          <span>app</span>
                         </a>
                         <button className={styles.document}>
                           Read the docs

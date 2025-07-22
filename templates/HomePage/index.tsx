@@ -11,13 +11,15 @@ import JoinCommunity from "@/components/JoinCommunity";
 
 import { posts } from "@/mocks/posts";
 import { reviews } from "@/mocks/reviews";
+import {useTranslation} from "@/utils/index";
 
 const HomePage = () => {
     const scrollToRef = useRef(null);
+    const { t } = useTranslation()
 
     return (
         <Layout>
-            <Main scrollToRef={scrollToRef} />
+            <Main scrollToRef={scrollToRef} t={t}/>
             <Development scrollToRef={scrollToRef} />
             <AboutUs />
             <Statistics />
