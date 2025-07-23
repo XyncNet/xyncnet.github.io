@@ -18,11 +18,11 @@ const AboutUsPage = () => {
     return (
         <Layout>
             <Main scrollToRef={scrollToRef} t={t} />
-            <Details scrollToRef={scrollToRef} />
-            <Testimonial />
-            <Team />
-            <Values />
-            <Reviews reviews={reviews} />
+            <Details scrollToRef={scrollToRef} t={t} />
+            <Testimonial t={t} />
+            <Team t={t} />
+            <Values t={t} />
+            <Reviews reviews={reviews} t={t} />
             <JoinCommunity title="Download our whitepaper" />
         </Layout>
     );

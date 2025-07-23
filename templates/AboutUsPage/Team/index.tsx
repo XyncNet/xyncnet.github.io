@@ -6,9 +6,9 @@ import Image from "@/components/Image";
 
 import { team } from "@/constants/team";
 
-type TeamProps = {};
+type TeamProps = {t: any};
 
-const Team = ({}: TeamProps) => {
+const Team = ({t}: TeamProps) => {
     const isMobile = useMediaQuery({
         query: "(max-width: 767px)",
     });

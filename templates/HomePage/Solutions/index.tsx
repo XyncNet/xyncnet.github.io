@@ -7,9 +7,9 @@ import Image from "@/components/Image";
 
 import { solutions, images } from "@/constants/solutions";
 
-type SolutionsProps = {};
+type SolutionsProps = {t: any};
 
-const Solutions = ({}: SolutionsProps) => {
+const Solutions = ({t}: SolutionsProps) => {
     const isMobile = useMediaQuery({
         query: "(max-width: 767px)",
     });

@@ -6,7 +6,7 @@ import Image from "@/components/Image";
 
 type MainProps = {
     scrollToRef: any;
-    t: any;
+    t: any
 };
 
 const Main = ({ scrollToRef, t }: MainProps) => (

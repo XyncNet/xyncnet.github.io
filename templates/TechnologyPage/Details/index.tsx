@@ -8,9 +8,10 @@ import { details } from "@/constants/detailsTechnology";
 
 type DetailsProps = {
     scrollToRef: any;
+    t: any;
 };
 
-const Details = ({ scrollToRef }: DetailsProps) => (
+const Details = ({ scrollToRef, t }: DetailsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("anchor", styles.anchor)} ref={scrollToRef}></div>
         <div className={cn("container", styles.container)}>

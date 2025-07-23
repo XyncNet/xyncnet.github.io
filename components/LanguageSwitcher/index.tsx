@@ -1,5 +1,4 @@
 import { useTranslation } from '@/contexts/LanguageContext'
-import styles from "@/components/Footer/Footer.module.sass";
 
 export default function LanguageSwitcher() {
     const { locale, changeLanguage } = useTranslation()

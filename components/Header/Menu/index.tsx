@@ -8,6 +8,7 @@ import styles from "./Menu.module.sass";
 import NavLink from "@/components/NavLink";
 import Socials from "@/components/Socials";
 import Image from "@/components/Image";
+import {useTranslation} from "@/contexts/LanguageContext";
 
 type NavigationType = {
     title: string;
@@ -46,6 +47,8 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
         setVisible(!visible);
         onClick();
     };
+
+    const { t } = useTranslation()
 
     return (
         <div>
@@ -106,7 +109,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                                                 rel="noopener noreferrer"
                                                 key={index}
                                             >
-                                                {link.title}
+                                                {t("nav."+link.title)}
                                             </a>
                                         ) : (
                                             <NavLink
@@ -120,7 +123,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                                                 href={link.url}
                                                 key={index}
                                             >
-                                                {link.title}
+                                                {t("nav."+link.title)}
                                             </NavLink>
                                         )
                                     )}

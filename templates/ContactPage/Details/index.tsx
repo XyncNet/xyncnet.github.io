@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import cn from "classnames";
 import styles from "./Details.module.sass";
@@ -9,9 +8,10 @@ import { socials } from "@/constants/socials";
 
 type DetailsProps = {
     scrollToRef: any;
+    t: any;
 };
 
-const Details = ({ scrollToRef }: DetailsProps) => {
+const Details = ({ scrollToRef, t }: DetailsProps) => {
     return (
         <div className={cn("section", styles.section)}>
             <div
@@ -21,7 +21,7 @@ const Details = ({ scrollToRef }: DetailsProps) => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.row}>
                     <div className={styles.col}>
-                        <Form />
+                        <Form t={t} />
                     </div>
                     <div className={styles.col}>
                         <div className={styles.item}>
@@ -37,14 +37,6 @@ const Details = ({ scrollToRef }: DetailsProps) => {
                                     <p>1199 Soi Ari 1, Phaya Thai</p>
                                     <p>Bangkok</p>
                                     <p>Thailand</p>
-                                </div>
-                            </div>
-                            <div className={styles.item}>
-                                <div className={styles.category}>Address 2</div>
-                                <div className={cn("h5", styles.content)}>
-                                    <p>4955 Serenity Unions</p>
-                                    <p>Dubai</p>
-                                    <p>UAE</p>
                                 </div>
                             </div>
                         </div>

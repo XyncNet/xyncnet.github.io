@@ -6,27 +6,21 @@ import Image from "@/components/Image";
 
 type MainProps = {
     scrollToRef: any;
+    t: any;
 };
 
-const Main = ({ scrollToRef }: MainProps) => (
+const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>Contact us</div>
-                <div className={cn("h1", styles.title)}>Let’s chat</div>
-                <div className={styles.info}>
-                    Xync delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain
-                </div>
+                <div className={styles.stage}>{t("contact_us")}</div>
+                <div className={cn("h1", styles.title)}>{t("lets_chat")}</div>
+                <div className={styles.info}>{t("contact_info")}</div>
                 <Scroll
                     className={styles.scroll}
                     mouseClassName={styles.mouse}
-                    title="WRITE SOMETHING"
-                    onScroll={() =>
-                        scrollToRef.current.scrollIntoView({
-                            behavior: "smooth",
-                        })
-                    }
+                    title={t("scroll_contact")}
+                    onScroll={() => scrollToRef.current.scrollIntoView({behavior: "smooth"})}
                     row
                 />
             </div>

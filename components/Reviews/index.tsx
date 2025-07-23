@@ -14,9 +14,10 @@ type ReviewsType = {
 
 type ReviewsProps = {
     reviews: ReviewsType[];
+    t: any
 };
 
-const Reviews = ({ reviews }: ReviewsProps) => {
+const Reviews = ({ reviews, t }: ReviewsProps) => {
     const isMobile = useMediaQuery({
         query: "(max-width: 767px)",
     });

@@ -1,24 +1,19 @@
 import cn from "classnames";
 import styles from "./Main.module.sass";
 import Image from "@/components/Image";
-import Card from "@/components/Card";
 
-type MainProps = {};
+type MainProps = {t: any};
 
-const Main = ({}: MainProps) => (
+const Main = ({t}: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
                 <div className={styles.line}>
-                    <div className={cn("status-green", styles.status)}>
-                        UPDATES
-                    </div>
-                    <div className={cn("status-dark", styles.date)}>
-                        2 aug 2022
-                    </div>
+                    <div className={cn("status-green", styles.status)}>{t("updates")}</div>
+                    <div className={cn("status-dark", styles.date)}>2 aug 2024</div>
                 </div>
                 <h1 className={cn("h1", styles.title)}>
-                    Everything Xync weekly report
+                    Everything XyncNet weekly report
                 </h1>
                 <div className={cn("h4", styles.info)}>
                     Xync delivers tamper-proof inputs, outputs, and computations

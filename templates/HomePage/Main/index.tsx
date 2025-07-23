@@ -49,7 +49,7 @@ const Main = ({ scrollToRef, t }: MainProps) => (
             </div>
             <Scroll
                 className={styles.scroll}
-                title="SCROLL TO EXPLORE"
+                title={t("scroll")}
                 onScroll={() =>
                     scrollToRef.current.scrollIntoView({
                         behavior: "smooth",

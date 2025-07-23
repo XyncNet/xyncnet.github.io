@@ -3,9 +3,9 @@ import styles from "./Content.module.sass";
 import Image from "@/components/Image";
 import Card from "@/components/Card";
 
-type ContentProps = {};
+type ContentProps = {t: any};
 
-const Content = ({}: ContentProps) => (
+const Content = ({t}: ContentProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <Card

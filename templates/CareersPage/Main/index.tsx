@@ -9,9 +9,9 @@ const images = [
     "/images/figures/figure-5.png",
 ];
 
-type MainProps = {};
+type MainProps = {t: any};
 
-const Main = ({}: MainProps) => (
+const Main = ({t}: MainProps) => (
     <div className={styles.section}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>

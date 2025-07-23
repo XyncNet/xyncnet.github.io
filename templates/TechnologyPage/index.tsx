@@ -11,20 +11,22 @@ import Reviews from "@/components/Reviews";
 import JoinCommunity from "@/components/JoinCommunity";
 
 import { reviews } from "@/mocks/reviews";
+import {useTranslation} from "@/contexts/LanguageContext";
 
 const TechnologyPage = () => {
     const scrollToRef = useRef(null);
+    const { t } = useTranslation()
 
     return (
         <Layout>
-            <Main scrollToRef={scrollToRef} />
-            <Details scrollToRef={scrollToRef} />
-            <Development />
-            <Community />
-            <AboutUs />
-            <Posts />
-            <Faq />
-            <Reviews reviews={reviews} />
+            <Main scrollToRef={scrollToRef} t={t} />
+            <Details scrollToRef={scrollToRef} t={t} />
+            <Development t={t} />
+            <Community t={t} />
+            <AboutUs t={t} />
+            <Posts t={t} />
+            <Faq t={t} />
+            <Reviews reviews={reviews} t={t} />
             <JoinCommunity title="Download our whitepaper" />
         </Layout>
     );

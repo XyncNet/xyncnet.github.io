@@ -3,12 +3,51 @@
   "description": "Global payment systems platform",
   "info": "BANK ↔ CRYPTO CURRENCY LOSSLESS % TRANSFERS",
   "scroll": "SCROLL TO EXPLORE",
+  "scroll_contact": "keep in touch",
+  "lets_chat": "Let’s chat",
+  "contact_us": "Contact us",
+  "contact_info": "Problems, questions, partnership offers? Fill free to fill the form, our support managers waiting your requests 24/7",
+  "rights": "All rights reserved",
+  "terms_of_use": "Terms of use",
+  "privacy_policy": "Privacy policy",
+  "send": "Send",
+  "updates": "UPDATES",
+  "more": "Learn more",
+  "dev_title": "XYNC makes international transfers accessible for everyone",
   "nav": {
+    "home": "Main",
     "community": "Community",
-    "tech": "Technology",
-    "about": "About us",
+    "technology": "Technology",
+    "about_us": "About us",
     "blog": "Blog",
     "careers": "Careers",
     "contact": "Contact"
+  },
+  "dev": {
+    "profit": {
+      "title": "Profit",
+      "desc": "The bast exchange rate guarantee and 0% fees",
+      "info": ""
+    },
+    "safe": {
+      "title": "Safe",
+      "desc": "All deals are secured. Escrow guarantee. Only verified counterparties",
+      "info": ""
+    },
+    "simple": {
+      "title": "Simple",
+      "desc": "The process of money receiving is easier then anywhere else",
+      "info": ""
+    },
+    "coverage": {
+      "title": "Coverage",
+      "desc": "1500+ payment systems and banks, 155 currencies in 231 countries",
+      "info": ""
+    },
+    "fast": {
+      "title": "Speed",
+      "desc": "Getting the payment just in 1 MINUTE. ONE, Carl!",
+      "info": ""
+    }
   }
 }

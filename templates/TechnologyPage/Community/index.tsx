@@ -22,9 +22,9 @@ const community = [
     },
 ];
 
-type CommunityProps = {};
+type CommunityProps = {t: any};
 
-const Community = ({}: CommunityProps) => (
+const Community = ({t}: CommunityProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container-large", styles.container)}>
             <div className={styles.wrap}>

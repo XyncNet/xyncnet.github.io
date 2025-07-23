@@ -3,9 +3,9 @@ import styles from "./Statistics.module.sass";
 
 import { statistics } from "@/mocks/statistics";
 
-type StatisticsProps = {};
+type StatisticsProps = {t: any};
 
-const Statistics = ({}: StatisticsProps) => (
+const Statistics = ({t}: StatisticsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container-large", styles.container)}>
             <div className={styles.wrapper}>

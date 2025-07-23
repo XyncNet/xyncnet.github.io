@@ -7,9 +7,9 @@ const list = [
     "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
 ];
 
-type AboutUsProps = {};
+type AboutUsProps = {t: any};
 
-const AboutUs = ({}: AboutUsProps) => (
+const AboutUs = ({t}: AboutUsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.row}>

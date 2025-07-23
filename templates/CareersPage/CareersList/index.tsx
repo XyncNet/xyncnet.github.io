@@ -5,9 +5,9 @@ import Image from "@/components/Image";
 
 import { careers } from "@/mocks/careers";
 
-type CareersListProps = {};
+type CareersListProps = {t:any};
 
-const CareersList = ({}: CareersListProps) => (
+const CareersList = ({t}: CareersListProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             {careers.map((item, index) => (

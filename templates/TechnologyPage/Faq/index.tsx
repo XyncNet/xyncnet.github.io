@@ -4,9 +4,9 @@ import Item from "./Item";
 
 import { faqs } from "@/constants/faqs";
 
-type FaqProps = {};
+type FaqProps = {t: any};
 
-const Faq = ({}: FaqProps) => (
+const Faq = ({t}: FaqProps) => (
     <div className={cn("section", styles.faq)}>
         <div className={cn("container", styles.container)}>
             <div className={cn("h2", styles.title)}>

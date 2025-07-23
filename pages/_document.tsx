@@ -17,15 +17,15 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
-                        name="Xync Blockchain Landing Page UI Design Kit"
+                        content="Global payment systems aggregator: Bank & Crypto"
+                        name="Xync Network"
                     />
                     <meta
-                        content="Xync Blockchain Landing Page UI Design Kit"
+                        content="Xync Network"
                         property="og:title"
                     />
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                        content="Global payment systems aggregator: Bank & Crypto"
                         property="og:description"
                     />
                     <meta
@@ -34,18 +34,18 @@ class MyDocument extends Document {
                     />
                     <meta
                         property="og:url"
-                        content="https://https://xyncnet.github.io/"
+                        content="https://xync.net"
                     />
                     <meta
                         property="og:site_name"
-                        content="Xync Blockchain Landing Page UI Design Kit"
+                        content="Xync Network"
                     />
                     <meta
-                        content="Xync Blockchain Landing Page UI Design Kit"
+                        content="Xync Network"
                         property="twitter:title"
                     />
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                        content="Global payment systems aggregator: Bank & Crypto"
                         property="twitter:description"
                     />
                     <meta

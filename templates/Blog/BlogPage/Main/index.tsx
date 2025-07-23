@@ -3,9 +3,9 @@ import cn from "classnames";
 import styles from "./Main.module.sass";
 import Image from "@/components/Image";
 
-type MainProps = {};
+type MainProps = {t: any};
 
-const Main = ({}: MainProps) => (
+const Main = ({t}: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.preview}>

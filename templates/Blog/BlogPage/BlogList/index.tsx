@@ -6,9 +6,9 @@ import Icon from "@/components/Icon";
 
 import { blog } from "@/mocks/blog";
 
-type BlogListProps = {};
+type BlogListProps = {t: any};
 
-const BlogList = ({}: BlogListProps) => (
+const BlogList = ({t}: BlogListProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.list}>

@@ -20,17 +20,18 @@ const HomePage = () => {
     return (
         <Layout>
             <Main scrollToRef={scrollToRef} t={t}/>
-            <Development scrollToRef={scrollToRef} />
-            <AboutUs />
-            <Statistics />
-            <Solutions />
+            <Development scrollToRef={scrollToRef} t={t} />
+            <AboutUs t={t} />
+            <Statistics t={t} />
+            <Solutions t={t} />
             <Posts
                 className="section"
                 title="Your gateway to everything Xync."
                 info="Stay current on the latest Xync project developments, news, and content, updated daily."
                 posts={posts}
+                t={t}
             />
-            <Reviews reviews={reviews} />
+            <Reviews reviews={reviews} t={t} />
             <JoinCommunity title="Want to get involved?" />
         </Layout>
     );

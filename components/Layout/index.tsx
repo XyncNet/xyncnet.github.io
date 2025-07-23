@@ -6,6 +6,7 @@ import cn from "classnames";
 import styles from "./Layout.module.sass";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import {useTranslation} from "@/contexts/LanguageContext";
 
 type LayoutProps = {
     layoutNoOverflow?: boolean;
@@ -19,6 +20,7 @@ const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
         clearQueueScrollLocks();
         enablePageScroll();
     }, [pathname]);
+    const { t } = useTranslation()
 
     return (
         <>
@@ -30,9 +32,9 @@ const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
                     [styles.layoutNoOverflow]: layoutNoOverflow,
                 })}
             >
-                <Header />
+                <Header/>
                 {children}
-                <Footer />
+                <Footer t={t} />
             </div>
         </>
     );

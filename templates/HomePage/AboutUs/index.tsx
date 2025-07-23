@@ -4,9 +4,9 @@ import Image from "@/components/Image";
 
 import { details } from "@/constants/detailsAbout";
 
-type AboutUsProps = {};
+type AboutUsProps = {t: any};
 
-const AboutUs = ({}: AboutUsProps) => (
+const AboutUs = ({t}: AboutUsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             {details.map((item, index) => (

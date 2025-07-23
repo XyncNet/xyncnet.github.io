@@ -21,9 +21,10 @@ type PostsProps = {
     info: string;
     posts: PostsType[];
     background?: boolean;
+    t: any
 };
 
-const Posts = ({ className, title, info, posts, background }: PostsProps) => (
+const Posts = ({ className, title, info, posts, background, t }: PostsProps) => (
     <div
         className={cn(
             className,

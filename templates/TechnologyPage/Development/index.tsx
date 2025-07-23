@@ -5,7 +5,7 @@ import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
 
-import { developmentTechnology } from "@/mocks/development";
+import {development} from "@/mocks/development";
 
 const images = [
     "/images/figures/figure-7.png",
@@ -13,9 +13,9 @@ const images = [
     "/images/figures/figure-1.png",
 ];
 
-type DevelopmentProps = {};
+type DevelopmentProps = {t: any};
 
-const Development = ({}: DevelopmentProps) => (
+const Development = ({t}: DevelopmentProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
@@ -27,7 +27,7 @@ const Development = ({}: DevelopmentProps) => (
                 </div>
             </div>
             <div className={styles.list}>
-                {developmentTechnology.map((item, index) => (
+                {development.map((item, index) => (
                     <Card
                         className={styles.card}
                         url={item.url}
@@ -36,9 +36,14 @@ const Development = ({}: DevelopmentProps) => (
                         animateIn="fadeInDown"
                     >
                         <div className={cn("h3", styles.subtitle)}>
-                            {item.title}
+                            {t("dev."+item.title+".title")}
                         </div>
-                        <div className={styles.content}>{item.content}</div>
+                        <div className={styles.content}>
+                            <p style={{color: "#999", fontWeight: "bold", marginBottom: 8}}>
+                                {t("dev."+item.title+".desc")}
+                            </p>
+                            {t("dev."+item.title+".info")}
+                        </div>
                         <div className={styles.preview}>
                             <div className={styles.inner}>
                                 <Image
@@ -49,12 +54,13 @@ const Development = ({}: DevelopmentProps) => (
                             </div>
                         </div>
                         <div className={styles.foot}>
-                            <div
+                            <a
+                                href={item.url}
                                 className={styles.more}
                                 style={{ color: item.color }}
                             >
-                                Learn more
-                            </div>
+                                {t("more")}
+                            </a>
                             <Icon
                                 className={styles.arrow}
                                 name="arrow-right"

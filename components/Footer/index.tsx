@@ -8,9 +8,9 @@ import Socials from "@/components/Socials";
 import { footerNavigation, documents } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
 
-type FooterProps = {};
+type FooterProps = {t: any};
 
-const Footer = ({}: FooterProps) => (
+const Footer = ({t}: FooterProps) => (
     <footer className={styles.footer}>
         <div className={cn("container-wide", styles.container)}>
             <div className={styles.row}>
@@ -25,7 +25,7 @@ const Footer = ({}: FooterProps) => (
                                 rel="noopener noreferrer"
                                 key={index}
                             >
-                                {link.title}
+                                {t("nav."+link.title)}
                             </a>
                         ) : (
                             <NavLink
@@ -34,7 +34,7 @@ const Footer = ({}: FooterProps) => (
                                 href={link.url}
                                 key={index}
                             >
-                                {link.title}
+                                {t("nav."+link.title)}
                             </NavLink>
                         )
                     )}
@@ -42,12 +42,12 @@ const Footer = ({}: FooterProps) => (
             </div>
             <div className={styles.row}>
                 <div className={styles.copyright}>
-                    © 2024 Xync Network. All rights reserved.
+                    © 2024 Xync Network. {t("rights")}.
                 </div>
                 <div className={styles.documents}>
                     {documents.map((document, index) => (
                         <Link href={document.url} key={index}  className={styles.document} target={"_blank"}>
-                            {document.title}
+                            {t(document.title)}
                         </Link>
                     ))}
                 </div>

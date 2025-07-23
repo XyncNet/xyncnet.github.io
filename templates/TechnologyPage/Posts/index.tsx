@@ -30,7 +30,7 @@ const list = [
     },
 ];
 
-type PostsProps = {};
+type PostsProps = {t: any};
 
 const Posts = ({}: PostsProps) => (
     <div className={cn("section", styles.section)}>

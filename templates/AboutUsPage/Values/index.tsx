@@ -22,9 +22,9 @@ const list = [
     },
 ];
 
-type ValuesProps = {};
+type ValuesProps = {t: any};
 
-const Values = ({}: ValuesProps) => (
+const Values = ({t}: ValuesProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.row}>

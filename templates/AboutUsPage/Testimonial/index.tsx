@@ -5,9 +5,9 @@ import Image from "@/components/Image";
 
 import { description, images } from "@/constants/testimonial";
 
-type TestimonialProps = {};
+type TestimonialProps = {t: any};
 
-const Testimonial = ({}: TestimonialProps) => (
+const Testimonial = ({t}: TestimonialProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.list}>

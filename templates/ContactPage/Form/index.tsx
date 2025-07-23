@@ -3,9 +3,9 @@ import cn from "classnames";
 import styles from "./Form.module.sass";
 import Field from "@/components/Field";
 
-type FormProps = {};
+type FormProps = {t: any};
 
-const Form = ({}: FormProps) => {
+const Form = ({t}: FormProps) => {
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [message, setMessage] = useState<string>("");
@@ -43,7 +43,7 @@ const Form = ({}: FormProps) => {
                 />
             </div>
             <button className="button">
-                <span>contact us</span>
+                <span>{t("send")}</span>
             </button>
         </form>
     );

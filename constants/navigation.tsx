@@ -1,66 +1,66 @@
 export const headerNavigation = [
     {
-        title: "Home",
+        title: "home",
         url: "/",
     },
     {
-        title: "About us",
-        url: "/about",
+        title: "about_us",
+        url: "/about-us",
     },
     {
-        title: "Community",
+        title: "community",
         url: "https://t.me/+KHg4dicUkWBjOTUy",
         external: true,
     },
     {
-        title: "Blog",
+        title: "blog",
         url: "/blog",
     },
     {
-        title: "Technology",
+        title: "technology",
         url: "/technology",
     },
     {
-        title: "Careers",
+        title: "careers",
         url: "/careers",
     },
 ];
 
 export const footerNavigation = [
     {
-        title: "Community",
+        title: "community",
         url: "https://t.me/+KHg4dicUkWBjOTUy",
         external: true,
     },
     {
-        title: "Technology",
+        title: "technology",
         url: "/technology",
     },
     {
-        title: "About us",
-        url: "/about",
+        title: "about_us",
+        url: "/about-us",
     },
     {
-        title: "Blog",
+        title: "blog",
         url: "/blog",
     },
     {
-        title: "Careers",
+        title: "careers",
         url: "/careers",
     },
     {
-        title: "Contact",
+        title: "contact",
         url: "/contact",
     },
 ];
 
 export const documents = [
     {
-        title: "Privacy policy",
+        title: "privacy_policy",
         url: "/privacy-policy.pdf",
     },
     {
-        title: "Terms of use",
+        title: "terms_of_use",
         url: "/terms-of-service.pdf",
     },
 ];

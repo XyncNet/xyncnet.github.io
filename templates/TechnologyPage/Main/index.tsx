@@ -13,9 +13,10 @@ const images = [
 
 type MainProps = {
     scrollToRef: any;
+    t: any;
 };
 
-const Main = ({ scrollToRef }: MainProps) => (
+const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
@@ -51,7 +52,7 @@ const Main = ({ scrollToRef }: MainProps) => (
             </div>
             <Scroll
                 className={styles.scroll}
-                title="SCROLL TO EXPLORE"
+                title={t("scroll")}
                 onScroll={() =>
                     scrollToRef.current.scrollIntoView({
                         behavior: "smooth",
