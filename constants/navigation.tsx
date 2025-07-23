@@ -5,7 +5,7 @@ export const headerNavigation = [
     },
     {
         title: "About us",
-        url: "/about-us",
+        url: "/about",
     },
     {
         title: "Community",
@@ -38,7 +38,7 @@ export const footerNavigation = [
     },
     {
         title: "About us",
-        url: "/about-us",
+        url: "/about",
     },
     {
         title: "Blog",

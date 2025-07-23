@@ -3,7 +3,11 @@
   "description": "Global payment systems platform",
   "info": "BANK <-> CRYPTO CURRENCY LOSSLESS % TRANSFERS",
   "nav": {
-    "home": "Главная",
-    "about": "О нас"
+    "community": "Community",
+    "tech": "Technology",
+    "about": "About us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact"
   }
 }

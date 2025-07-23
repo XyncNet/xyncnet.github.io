@@ -7,6 +7,7 @@ import Menu from "./Menu";
 
 import { headerNavigation } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 type HeaderProps = {};
 
@@ -34,6 +35,7 @@ const Header = ({}: HeaderProps) => {
                 data-scroll-lock-fill-gap
             >
                 <Logo className={styles.logo} />
+                <LanguageSwitcher/>
                 <Menu
                     navigation={headerNavigation}
                     socials={socials}

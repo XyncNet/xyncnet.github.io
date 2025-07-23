@@ -1,24 +1,12 @@
-import {useRouter} from 'next/router'
-import Link from 'next/link'
+import { useTranslation } from '@/contexts/LanguageContext'
+import styles from "@/components/Footer/Footer.module.sass";
 
 export default function LanguageSwitcher() {
-    const router = useRouter()
+    const { locale, changeLanguage } = useTranslation()
 
     return (
-        <div>
-            {
-                // @ts-ignore
-                router.locales.map((locale) => (
-                    <Link
-                        key={locale}
-                        href={router.asPath}
-                        locale={locale}
-                        className={locale === router.locale ? 'active' : ''}
-                    >
-                        {locale.toUpperCase()}
-                    </Link>
-                ))
-            }
-        </div>
+        locale === 'en'
+            ? <a onClick={() => changeLanguage('ru')} style={{marginRight: 24}}><span>RU</span></a>
+            : <a onClick={() => changeLanguage('en')} style={{marginRight: 24}}><span>EN</span></a>
     )
 }

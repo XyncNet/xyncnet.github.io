@@ -3,7 +3,11 @@
   "description": "Глобальная сеть платежных систем",
   "info": "БАНКОВСКИЕ ВАЛЮТЫ <-> БЛОКЧЕЙНЫ",
   "nav": {
-    "home": "Главная",
-    "about": "О нас"
+    "Community": "",
+    "Technology": "",
+    "About us": "О нас",
+    "Blog": "",
+    "Careers": "",
+    "Contact": "Главная"
   }
 }

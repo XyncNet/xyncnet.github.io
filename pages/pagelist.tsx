@@ -8,7 +8,7 @@ const Home: NextPage = () => {
                 Home page
             </Link>
             <br></br>
-            <Link href="/about-us" style={{ color: "#fff" }}>
+            <Link href="/about" style={{ color: "#fff" }}>
                 About us page
             </Link>
             <br></br>
