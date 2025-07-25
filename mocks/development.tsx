@@ -20,17 +20,17 @@ export const development = [
         url: "/technology",
     },
     {
+        title: "simple",
+        image: "/images/development-pic-1.png",
+        color: "#54C310",
+        delay: 750,
+        url: "/technology",
+    },
+    {
         title: "safe",
         image: "/images/development-pic-2.png",
         color: "#6F5BEB",
         delay: 450,
-        url: "/technology",
-    },
-    {
-        title: "simple",
-        image: "/images/development-pic-1.png",
-        color: "#EBB15B",
-        delay: 750,
         url: "/technology",
     },
 ];

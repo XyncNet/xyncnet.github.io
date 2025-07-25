@@ -24,7 +24,10 @@ const Main = ({ scrollToRef, t }: MainProps) => (
             <div className={styles.head}>
                 <div className={styles.stage}>{t("title")}</div>
                 <div className={cn("h1", styles.title)}>{t("description")}</div>
-                <div className={styles.info}><b>XYNC</b>{t("info")}</div>
+                <div className={styles.info} style={{fontStyle: "italic"}}>
+                    <Image src="/images/xync-white.svg" width={t("css.sbt_logo_width")} height={44.5} style={{transform: "scaleX(0.7)", marginRight: -18}}  alt="Xync"/>
+                    {t("info")}
+                </div>
             </div>
             <div className={styles.images}>
                 <div className={styles.image}>

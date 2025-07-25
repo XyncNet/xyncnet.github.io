@@ -5,7 +5,7 @@ export const solutions = [
             "EVM-compatible block sidechain, secured by a permissionless set of PoS validators.",
         icon: "/images/icon-1.svg",
         status: "ONLINE",
-        color: "#EB5BE4",
+        color: "#EBB15B",
     },
     {
         title: "Xync Satchel",
@@ -13,7 +13,7 @@ export const solutions = [
             "Create exchanges and marketplaces that allow anyone around the world to invest.",
         icon: "/images/icon-2.svg",
         status: "ONLINE",
-        color: "#EB5BE4",
+        color: "#6F5BEB",
         delay: 200,
     },
     {
@@ -31,7 +31,7 @@ export const solutions = [
             "Cryptographic proofs to connect highly accurate and available data/APIs to any smart contract.",
         icon: "/images/icon-4.svg",
         status: "DEVELOPMENT",
-        color: "#EBB15B",
+        color: "#54C310",
     },
     {
         title: "Xync Echo",

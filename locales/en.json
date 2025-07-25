@@ -36,7 +36,7 @@
     },
     "simple": {
       "title": "Simple",
-      "desc": "The process of money receiving is easier then anywhere else",
+      "desc": "The process of money receiving or payment is a maximum of 6 clicks",
       "info": ""
     },
     "coverage": {
@@ -49,5 +49,8 @@
       "desc": "Getting the transfer just in One1 MINUTE. ONE, Carl!",
       "info": ""
     }
+  },
+  "css" : {
+    "sbt_logo_width": 110
   }
 }
