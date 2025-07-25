@@ -5,7 +5,7 @@ export const posts = [
         image: "/images/post-pic-1.jpg",
         status: "UPDATES",
         url: "/blog/article",
-        color: "#EB5BE5",
+        color: "#54C310",
     },
     {
         title: "Architects of the consensus",
@@ -13,7 +13,7 @@ export const posts = [
         image: "/images/post-pic-2.jpg",
         status: "UPDATES",
         url: "/blog/article",
-        color: "#89EB5B",
+        color: "#EB5BE4",
     },
     {
         title: "Mitigating lost transactions",

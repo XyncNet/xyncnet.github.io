@@ -8,7 +8,7 @@ const list = [
     {
         title: "Everything Xync weekly report",
         status: "TAG LINE",
-        color: "#EB5BE5",
+        color: "#54C310",
     },
     {
         title: "Everything Xync weekly report",
@@ -18,7 +18,7 @@ const list = [
     {
         title: "Everything Xync weekly report",
         status: "TAG LINE",
-        color: "#89EB5B",
+        color: "#EB5BE4",
     },
 ];
 

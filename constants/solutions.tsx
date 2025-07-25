@@ -5,7 +5,7 @@ export const solutions = [
             "EVM-compatible block sidechain, secured by a permissionless set of PoS validators.",
         icon: "/images/icon-1.svg",
         status: "ONLINE",
-        color: "#89EB5B",
+        color: "#EB5BE4",
     },
     {
         title: "Xync Satchel",
@@ -13,7 +13,7 @@ export const solutions = [
             "Create exchanges and marketplaces that allow anyone around the world to invest.",
         icon: "/images/icon-2.svg",
         status: "ONLINE",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         delay: 200,
     },
     {
@@ -22,7 +22,7 @@ export const solutions = [
             "Bring value to gamers by letting them take their loot to another game or into the real world.",
         icon: "/images/icon-3.svg",
         status: "ONLINE",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         delay: 400,
     },
     {

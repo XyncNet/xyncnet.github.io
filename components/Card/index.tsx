@@ -37,7 +37,7 @@ const Card = ({
             <div className={cn(styles.background, backgroundCardClass)}></div>
             <div
                 className={cn(styles.square, squareCardClass)}
-                style={{ backgroundColor: color || "#89EB5B" }}
+                style={{ backgroundColor: color || "#EB5BE4" }}
             ></div>
             <svg
                 className={cn(styles.corner, cornerCardClass)}

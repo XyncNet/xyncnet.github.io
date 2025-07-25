@@ -36,7 +36,7 @@ const Team = ({t}: TeamProps) => {
                             <div
                                 className={styles.square}
                                 style={{
-                                    backgroundColor: man.color || "#89EB5B",
+                                    backgroundColor: man.color || "#EB5BE4",
                                 }}
                             ></div>
                             <div className={styles.photo}>

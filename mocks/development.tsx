@@ -15,7 +15,7 @@ export const development = [
     {
         title: "fast",
         image: "/images/development-pic-3.png",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         delay: 300,
         url: "/technology",
     },

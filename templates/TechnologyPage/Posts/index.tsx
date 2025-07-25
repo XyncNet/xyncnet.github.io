@@ -11,7 +11,7 @@ const list = [
         title: "Everything Xync weekly report",
         status: "UPDATES",
         date: "08/11/2022",
-        color: "#EB5BE5",
+        color: "#54C310",
         url: "/blog/article",
     },
     {
@@ -25,7 +25,7 @@ const list = [
         title: "Everything Xync weekly report",
         status: "NEW RELEASE",
         date: "08/11/2022",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         url: "/blog/article",
     },
 ];

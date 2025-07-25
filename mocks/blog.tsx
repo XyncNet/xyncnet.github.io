@@ -20,7 +20,7 @@ export const blog = [
         content:
             "Your data can be transformed, organized, and shared across applications for anyone to query with just...",
         image: "/images/blog/photo-3.png",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         url: "/blog/article",
     },
     {
@@ -44,7 +44,7 @@ export const blog = [
         content:
             "Your data can be transformed, organized, and shared across applications for anyone to query with just...",
         image: "/images/blog/photo-6.png",
-        color: "#89EB5B",
+        color: "#EB5BE4",
         url: "/blog/article",
     },
     {
