@@ -26,7 +26,8 @@ const Development = ({ scrollToRef, t }: DevelopmentProps) => {
                 ref={scrollToRef}
             ></div>
             <div className={cn("container-wide", styles.container)}>
-                <h2 className={cn("h2", styles.title)}>{t("dev_title")}.</h2>
+                <h4 className={cn(styles.title, styles.stage)}>{t("dev_stage")}</h4>
+                <h2 className={cn("h2", styles.title)}>{t("dev_title")}</h2>
                 <div className={styles.list} {...events} ref={ref}>
                     {development.map((item, index) => (
                         <Card
