@@ -8,10 +8,10 @@ export const details = [
         },
         content: (
             <>
-                <h2>Built by developers, for developers.</h2>
+                <h2>Process of transfer or payment receiving</h2>
                 <p>
-                    Xync delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain.
+                    Что бы получать платежи и переводы у вас должен быть ненулевой баланс на аккаунте.
+                    Его можно пополнить любым из
                 </p>
                 <ul>
                     <li>Fully benefit from scalable network effects</li>
