@@ -42,8 +42,8 @@ const Development = ({t}: DevelopmentProps) => (
                             <p style={{color: "#999", fontWeight: "bold", marginBottom: 8}}>
                                 {t("dev."+item.title+".desc")}
                             </p>
-                            {t("dev."+item.title+".info")}
                         </div>
+                        <div className={styles.content}>{t("dev."+item.title+".info")}</div>
                         <div className={styles.preview}>
                             <div className={styles.inner}>
                                 <Image
@@ -54,13 +54,12 @@ const Development = ({t}: DevelopmentProps) => (
                             </div>
                         </div>
                         <div className={styles.foot}>
-                            <a
-                                href={item.url}
+                            <div
                                 className={styles.more}
                                 style={{ color: item.color }}
                             >
                                 {t("more")}
-                            </a>
+                            </div>
                             <Icon
                                 className={styles.arrow}
                                 name="arrow-right"
