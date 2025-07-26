@@ -16,14 +16,16 @@ const AboutUs = ({t}: AboutUsProps) => (
                             {item.content}
                         </div>
                       <div className={styles.line}>
-                        <a
-                          className={cn("button", styles.button)}
-                          href="https://t.me/XyncNetBot/test"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span>app</span>
-                        </a>
+                        <div style={{marginRight: 32}}>
+                          <a
+                              className={cn("button", styles.button)}
+                              href="https://t.me/XyncNetBot/test"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                            <span>app</span>
+                          </a>
+                        </div>
                         <button className={styles.document}>
                           Read the docs
                         </button>

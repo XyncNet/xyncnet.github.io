@@ -37,9 +37,11 @@ const Posts = ({ className, title, info, posts, background, t }: PostsProps) => 
                 <div className={styles.wrap}>
                     <div className={cn("h2", styles.title)}>{title}</div>
                     <div className={styles.info}>{info}</div>
-                    <Link href="/blog" className={cn("button", styles.button)}>
-                        <span>view all posts</span>
-                    </Link>
+                    <div style={{marginTop: "auto"}}>
+                        <Link href="/blog" className={cn("button", styles.button)}>
+                            <span>view all posts</span>
+                        </Link>
+                    </div>
                 </div>
                 <div className={styles.list}>
                     {posts.map((item, index) => (

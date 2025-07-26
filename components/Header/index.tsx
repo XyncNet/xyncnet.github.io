@@ -41,14 +41,16 @@ const Header = ({}: HeaderProps) => {
                     socials={socials}
                     onClick={() => setOpen(!open)}
                 />
-                <a
-                    className={cn("button", styles.button)}
-                    href="https://t.me/XyncNetBot/test"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>app</span>
-                </a>
+                <div style={{marginLeft: 24}}>
+                    <a
+                        className={cn("button", styles.button)}
+                        href="https://t.me/XyncNetBot/test"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>app</span>
+                    </a>
+                </div>
             </div>
         </header>
     );
