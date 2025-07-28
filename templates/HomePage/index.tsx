@@ -23,15 +23,15 @@ const HomePage = () => {
             <Development scrollToRef={scrollToRef} t={t} />
             <AboutUs t={t} locale={locale} />
             <Statistics t={t} />
-            <Solutions t={t} />
-            <Posts
-                className="section"
-                title="Your gateway to everything Xync."
-                info="Stay current on the latest Xync project developments, news, and content, updated daily."
-                posts={posts}
-                t={t}
-            />
-            <Reviews reviews={reviews} t={t} />
+            {/*<Solutions t={t} />*/}
+            {/*<Posts*/}
+            {/*    className="section"*/}
+            {/*    title="Your gateway to everything Xync."*/}
+            {/*    info="Stay current on the latest Xync project developments, news, and content, updated daily."*/}
+            {/*    posts={posts}*/}
+            {/*    t={t}*/}
+            {/*/>*/}
+            {/*<Reviews reviews={reviews} t={t} />*/}
             <JoinCommunity title="Want to get involved?" />
         </Layout>
     );

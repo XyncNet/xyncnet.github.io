@@ -15,7 +15,7 @@ const Statistics = ({t}: StatisticsProps) => (
                             <div className={cn("h3", styles.value)}>
                                 {item.value}
                             </div>
-                            <div className={styles.title}>{item.title}</div>
+                            <div className={styles.title}>{t("stat."+item.title)}</div>
                         </div>
                     ))}
                 </div>

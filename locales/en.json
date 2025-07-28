@@ -51,6 +51,14 @@
       "info": ""
     }
   },
+  "stat": {
+    "pm": "Payment systems",
+    "cur": "Bank Currencies",
+    "country": "Countries",
+    "coin": "Crypto currencies",
+    "ex": "Exchanges",
+    "fee": "Commission fees"
+  },
   "css" : {
     "sbt_logo_width": 110
   }

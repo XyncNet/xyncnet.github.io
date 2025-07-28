@@ -1,26 +1,26 @@
 export const statistics = [
     {
-        title: "Contract creators",
-        value: "220K+",
+        title: "pm",
+        value: "1500+",
     },
     {
-        title: "Avg. daily gas saved",
-        value: "$110M",
+        title: "cur",
+        value: "145",
     },
     {
-        title: "Active validators",
-        value: "89",
+        title: "country",
+        value: "196",
     },
     {
-        title: "Unique addresses",
-        value: "90M+",
+        title: "coin",
+        value: "23",
     },
     {
-        title: "Delegators on PoS",
-        value: "17.5K",
+        title: "ex",
+        value: "Top10",
     },
     {
-        title: "Total transactions",
-        value: "4.9B+",
+        title: "fee",
+        value: "0.00%",
     },
 ];
