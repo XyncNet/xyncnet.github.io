@@ -15,13 +15,13 @@ import {useTranslation} from "@/contexts/LanguageContext";
 
 const HomePage = () => {
     const scrollToRef = useRef(null);
-    const { t } = useTranslation()
+    const { t, locale } = useTranslation()
 
     return (
         <Layout>
-            <Main scrollToRef={scrollToRef} t={t}/>
+            <Main scrollToRef={scrollToRef} t={t} locale={locale} />
             <Development scrollToRef={scrollToRef} t={t} />
-            <AboutUs t={t} />
+            <AboutUs t={t} locale={locale} />
             <Statistics t={t} />
             <Solutions t={t} />
             <Posts

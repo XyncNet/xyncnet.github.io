@@ -4,17 +4,17 @@ import Image from "@/components/Image";
 
 import { details } from "@/constants/detailsAbout";
 
-type AboutUsProps = {t: any};
+type AboutUsProps = {t: any, locale: string};
 
-const AboutUs = ({t}: AboutUsProps) => (
+const AboutUs = ({t, locale}: AboutUsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             {details.map((item, index) => (
                 <div className={styles.item} key={index}>
                     <div className={styles.wrap}>
-                        <div className={cn("content", styles.content)}>
-                            {item.content}
-                        </div>
+                      <div className={cn("content", styles.content)}>
+                        {item.content[locale]}
+                      </div>
                       <div className={styles.line}>
                         <div style={{marginRight: 32}}>
                           <a
