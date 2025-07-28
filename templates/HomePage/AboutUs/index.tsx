@@ -13,7 +13,10 @@ const AboutUs = ({t, locale}: AboutUsProps) => (
                 <div className={styles.item} key={index}>
                     <div className={styles.wrap}>
                       <div className={cn("content", styles.content)}>
-                        {item.content[locale]}
+                        {
+                            // @ts-ignore
+                            item.content[locale]
+                        }
                       </div>
                       <div className={styles.line}>
                         <div style={{marginRight: 32}}>
