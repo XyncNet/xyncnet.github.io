@@ -42,7 +42,7 @@ const Footer = ({t}: FooterProps) => (
             </div>
             <div className={styles.row}>
                 <div className={styles.copyright}>
-                    © 2024 Xync Network. {t("rights")}.
+                    2022 - {(new Date()).getFullYear()} © Xync Network.
                 </div>
                 <div className={styles.documents}>
                     {documents.map((document, index) => (

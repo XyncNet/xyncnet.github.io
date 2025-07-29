@@ -36,7 +36,7 @@ export const solutions = [
     {
         title: "Xync Echo",
         content:
-            "Empower your community to organize and allocate resources to its members. ",
+            "Empower your network to organize and allocate resources to its members. ",
         icon: "/images/icon-5.svg",
         status: "DEVELOPMENT",
         color: "#EBB15B",

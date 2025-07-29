@@ -21,7 +21,7 @@ const ArticlePage = () => {
                 background
                 t={t}
             />
-            <JoinCommunity title="Download our whitepaper" />
+            <JoinCommunity title="Download our whitepaper" t={t} />
         </Layout>
     );
 };

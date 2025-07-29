@@ -4,7 +4,7 @@ import Socials from "@/components/Socials";
 
 import { socials } from "@/constants/socials";
 
-const community = [
+const network = [
     {
         value: "$110M",
         content:
@@ -31,7 +31,7 @@ const Community = ({t}: CommunityProps) => (
                 <div className={styles.row}>
                     <div className={styles.details}>
                         <div className={cn("h2", styles.title)}>
-                            Xync community
+                            XyncNetwork
                         </div>
                         <div className={styles.info}>
                             Stay current on the latest Xync project.
@@ -47,7 +47,7 @@ const Community = ({t}: CommunityProps) => (
                 </div>
             </div>
             <div className={styles.list}>
-                {community.map((item, index) => (
+                {network.map((item, index) => (
                     <div className={styles.item} key={index}>
                         <div className={cn("h2", styles.value)}>
                             {item.value}

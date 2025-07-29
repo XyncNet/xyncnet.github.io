@@ -32,7 +32,7 @@ const HomePage = () => {
             {/*    t={t}*/}
             {/*/>*/}
             {/*<Reviews reviews={reviews} t={t} />*/}
-            <JoinCommunity title="Want to get involved?" />
+            <JoinCommunity title={t("join")} t={t} />
         </Layout>
     );
 };

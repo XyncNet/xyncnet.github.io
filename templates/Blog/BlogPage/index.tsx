@@ -15,7 +15,7 @@ const BlogPage = () => {
             <Main t={t} />
             <BlogList t={t} />
             <Reviews reviews={reviews} t={t} />
-            <JoinCommunity title="Want to get involved?" />
+            <JoinCommunity title="Want to get involved?" t={t} />
         </Layout>
     );
 };

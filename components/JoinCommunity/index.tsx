@@ -12,33 +12,34 @@ const images = [
 ];
 
 type JoinCommunityProps = {
+    t: any;
     title: string;
 };
 
-const JoinCommunity = ({ title }: JoinCommunityProps) => (
+const JoinCommunity = ({ t, title }: JoinCommunityProps) => (
     <div className={styles.section}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
                 <div className={cn("h2", styles.title)}>{title}</div>
                 <div className={styles.info}>
-                    Or learn all about{" "}
+                    {t("get_more")}
                     <a
                         className={styles.social}
-                        href="/"
+                        href="/about"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        how to earn on XyncNet
+                        {t("more_link")}
                     </a>
                     .
                 </div>
                 <a
                     className={cn("button", styles.button)}
-                    href="https://t.me/+KHg4dicUkWBjOTUy"
+                    href="https://t.me/XyncNet"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span>JOIN THE COMMUNITY</span>
+                    <span>{t("join_link")}</span>
                 </a>
             </div>
         </div>

@@ -23,7 +23,7 @@ const AboutUsPage = () => {
             <Team t={t} />
             <Values t={t} />
             <Reviews reviews={reviews} t={t} />
-            <JoinCommunity title="Download our whitepaper" />
+            <JoinCommunity title="Download our whitepaper" t={t} />
         </Layout>
     );
 };

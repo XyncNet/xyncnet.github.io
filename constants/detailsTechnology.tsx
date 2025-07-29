@@ -21,7 +21,7 @@ export const details = [
             content:
                 "“It’s not just that is fast, the scalability and ease of use is simply unparalleled, truly mindblowing”",
         },
-        image: "/images/technology-pic-1.png",
+        image: "/images/tech-pic-1.png",
         color: "#E87A95",
     },
     {
@@ -39,7 +39,7 @@ export const details = [
                 </ul>
             </>
         ),
-        image: "/images/technology-pic-2.png",
+        image: "/images/tech-pic-2.png",
         color: "#EBB15B",
     },
 ];

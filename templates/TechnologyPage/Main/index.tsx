@@ -20,7 +20,7 @@ const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>technology</div>
+                <div className={styles.stage}>tech</div>
                 <div className={cn("h1", styles.title)}>
                     Built by developers, for developers.
                 </div>

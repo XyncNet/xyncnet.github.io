@@ -1,48 +1,20 @@
-export const headerNavigation = [
-    {
-        title: "home",
-        url: "/",
-    },
-    {
-        title: "about_us",
-        url: "/about-us",
-    },
-    {
-        title: "community",
-        url: "https://t.me/+KHg4dicUkWBjOTUy",
-        external: true,
-    },
-    {
-        title: "blog",
-        url: "/blog",
-    },
-    {
-        title: "technology",
-        url: "/technology",
-    },
-    {
-        title: "careers",
-        url: "/careers",
-    },
-];
-
 export const footerNavigation = [
     {
-        title: "community",
-        url: "https://t.me/+KHg4dicUkWBjOTUy",
-        external: true,
+        title: "about",
+        url: "/about",
     },
     {
-        title: "technology",
-        url: "/technology",
-    },
-    {
-        title: "about_us",
-        url: "/about-us",
+        title: "tech",
+        url: "/tech",
     },
     {
         title: "blog",
         url: "/blog",
+    },
+    {
+        title: "network",
+        url: "https://t.me/+KHg4dicUkWBjOTUy",
+        external: true,
     },
     {
         title: "careers",
@@ -53,6 +25,11 @@ export const footerNavigation = [
         url: "/contact",
     },
 ];
+
+export const headerNavigation = [{
+        title: "home",
+        url: "/",
+    }].concat(footerNavigation);
 
 export const documents = [
     {

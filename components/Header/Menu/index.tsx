@@ -9,6 +9,7 @@ import NavLink from "@/components/NavLink";
 import Socials from "@/components/Socials";
 import Image from "@/components/Image";
 import {useTranslation} from "@/contexts/LanguageContext";
+import { useRouter } from "next/router";
 
 type NavigationType = {
     title: string;
@@ -25,6 +26,7 @@ type MenuProps = {
 const Menu = ({ navigation, socials, onClick }: MenuProps) => {
     const [visible, setVisible] = useState<boolean>(false);
     const [loaded, setLoaded] = useState<boolean>(false);
+    const router = useRouter()
 
     useHotkeys("esc", () => setVisible(false), {
         enableOnTags: ["INPUT", "TEXTAREA"],
@@ -80,37 +82,39 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                                 )}
                                 onClick={(e) => e.stopPropagation()}
                             >
-                                <nav className={styles.nav}>
-                                    {navigation.map((link, index) =>
-                                        link.external ? (
-                                            <a
-                                                className={cn(
-                                                    "h2",
-                                                    styles.link
-                                                )}
-                                                href={link.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                key={index}
-                                            >
-                                                {t("nav."+link.title)}
-                                            </a>
-                                        ) : (
-                                            <NavLink
-                                                className={cn(
-                                                    "h2",
-                                                    styles.link
-                                                )}
-                                                activeClassName={
-                                                    styles.active
-                                                }
-                                                href={link.url}
-                                                key={index}
-                                            >
-                                                {t("nav."+link.title)}
-                                            </NavLink>
-                                        )
-                                    )}
+                                <nav className={styles.nav}>{
+                                  navigation.map((link, index) =>
+                                    router.route != link.url && (
+                                      link.external ?
+                                        <a
+                                            className={cn(
+                                                "h2",
+                                                styles.link
+                                            )}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            key={index}
+                                        >
+                                            {t("nav." + link.title)}
+                                        </a>
+                                        :
+                                        <NavLink
+                                            className={cn(
+                                                "h2",
+                                                styles.link
+                                            )}
+                                            activeClassName={
+                                                styles.active
+                                            }
+                                            href={link.url}
+                                            key={index}
+                                        >
+                                            {t("nav." + link.title)}
+                                        </NavLink>
+                                    )
+                                  )
+                                }
                                 </nav>
                                 <div className={styles.line}>
                                     <Socials
