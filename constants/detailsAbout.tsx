@@ -45,7 +45,7 @@ export const details = [
         },
         content: {
             "en": <>
-                <h2>How to top up your balance</h2>
+                <h2 id="top-up">How to top up your balance</h2>
                 <p>
                     P2P transfer in the <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>bot</Link>, or directly by the one of payment providers
                 </p>
@@ -70,7 +70,7 @@ export const details = [
                 </div>
             </>,
             "ru": <>
-                <h2>Как пополнить баланс</h2>
+                <h2 id="top-up">Как пополнить баланс</h2>
                 <p>
                     P2P переводом в <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>боте</Link>, либо напрямую через одного из платежных провайдеров
                 </p>
@@ -78,17 +78,17 @@ export const details = [
                     <Link href="https://account.volet.com/referral/c3778593-4236-4e3a-8bde-216aef3bf724" target="_blank">
                         <Image
                             src="/images/pm/volet.svg"
-                            width={206}
-                            height={64}
+                            width={103}
+                            height={32}
                             alt="Xync"
                         />
                     </Link>
                     <Link href="https://payeer.com/038813323" target="_blank">
                         <Image
                             src="/images/pm/payeer.svg"
-                            width={210}
-                            height={43}
-                            style={{marginTop: 14, marginLeft: 45}}
+                            width={110}
+                            height={23}
+                            style={{marginTop: 6, marginLeft: 30}}
                             alt="Xync"
                         />
                     </Link>
