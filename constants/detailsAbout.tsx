@@ -1,3 +1,7 @@
+import Link from "next/link";
+import Image from "@/components/Image";
+import styles from "@/templates/HomePage/AboutUs/AboutUs.module.sass";
+
 export const details = [
     {
             image: {
@@ -32,42 +36,64 @@ export const details = [
                 </>
             },
     },
-    // {
-    //     image: {
-    //         src: "/images/about-pic-2.png",
-    //         width: 712,
-    //         height: 682,
-    //         alt: "Figure",
-    //     },
-    //     content: {
-    //         "en": <>
-    //             <h2>Top blockchains build on Xync.</h2>
-    //             <p>
-    //                 Xync is committed to fostering the growth of Web3
-    //                 applications by providing the infrastructure and security
-    //                 needed for Web3.
-    //             </p>
-    //             <p>
-    //                 Xync believes in Web3 for all. Xync is a decentralised
-    //                 blockchain scaling platform that enables developers to build
-    //                 scalable user-friendly dApps with low transaction fees
-    //                 without ever sacrificing on security.
-    //             </p>
-    //         </>,
-    //         "ru": <>
-    //             <h2>Top blockchains build on Xync.</h2>
-    //             <p>
-    //                 Xync is committed to fostering the growth of Web3
-    //                 applications by providing the infrastructure and security
-    //                 needed for Web3.
-    //             </p>
-    //             <p>
-    //                 Xync believes in Web3 for all. Xync is a decentralised
-    //                 blockchain scaling platform that enables developers to build
-    //                 scalable user-friendly dApps with low transaction fees
-    //                 without ever sacrificing on security.
-    //             </p>
-    //         </>
-    //     }
-    // },
+    {
+        image: {
+            src: "/images/about-pic-2.png",
+            width: 712,
+            height: 682,
+            alt: "Figure",
+        },
+        content: {
+            "en": <>
+                <h2>How to top up your balance</h2>
+                <p>
+                    P2P transfer in the <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>bot</Link>, or directly by the one of payment providers
+                </p>
+                <div>
+                    <Link href="https://account.volet.com/referral/c3778593-4236-4e3a-8bde-216aef3bf724" target="_blank">
+                        <Image
+                            src="/images/pm/volet.svg"
+                            width={206}
+                            height={64}
+                            alt="Xync"
+                        />
+                    </Link>
+                    <Link href="https://payeer.com/038813323" target="_blank">
+                        <Image
+                            src="/images/pm/payeer.svg"
+                            width={210}
+                            height={43}
+                            style={{marginTop: 14, marginLeft: 45}}
+                            alt="Xync"
+                        />
+                    </Link>
+                </div>
+            </>,
+            "ru": <>
+                <h2>Как пополнить баланс</h2>
+                <p>
+                    P2P переводом в <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>боте</Link>, либо напрямую через одного из платежных провайдеров
+                </p>
+                <div>
+                    <Link href="https://account.volet.com/referral/c3778593-4236-4e3a-8bde-216aef3bf724" target="_blank">
+                        <Image
+                            src="/images/pm/volet.svg"
+                            width={206}
+                            height={64}
+                            alt="Xync"
+                        />
+                    </Link>
+                    <Link href="https://payeer.com/038813323" target="_blank">
+                        <Image
+                            src="/images/pm/payeer.svg"
+                            width={210}
+                            height={43}
+                            style={{marginTop: 14, marginLeft: 45}}
+                            alt="Xync"
+                        />
+                    </Link>
+                </div>
+            </>
+        }
+    },
 ];

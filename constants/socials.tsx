@@ -1,15 +1,15 @@
 export const socials = [
     {
         icon: "discord",
-        href: "https://t.me/XyncNetBot",
+        href: "https://t.me/XyncPayBot",
     },
     {
         icon: "twitter",
-        href: "https://twitter.com/xyncnet",
+        href: "https://twitter.com/xyncpay",
     },
     {
         icon: "instagram",
-        href: "https://www.instagram.com/xyncnet",
+        href: "https://www.instagram.com/xyncpay",
     },
     {
         icon: "telegram",
@@ -17,6 +17,6 @@ export const socials = [
     },
     {
         icon: "facebook",
-        href: "https://www.facebook.com/xyncnet/",
+        href: "https://www.facebook.com/xyncpay/",
     },
 ];

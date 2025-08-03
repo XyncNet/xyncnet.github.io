@@ -13,7 +13,7 @@ const Main = ({t}: MainProps) => (
                     <div className={cn("status-dark", styles.date)}>2 aug 2024</div>
                 </div>
                 <h1 className={cn("h1", styles.title)}>
-                    Everything XyncNet weekly report
+                    Everything  weekly report
                 </h1>
                 <div className={cn("h4", styles.info)}>
                     Xync delivers tamper-proof inputs, outputs, and computations
