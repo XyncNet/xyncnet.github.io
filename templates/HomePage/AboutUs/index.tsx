@@ -22,7 +22,7 @@ const AboutUs = ({t, locale}: AboutUsProps) => (
                         <div style={{marginRight: 32}}>
                           <a
                               className={cn("button", styles.button)}
-                              href="https://t.me/XyncNetBot/test"
+                              href="https://t.me/XyncNetBot?startapp"
                               target="_blank"
                               rel="noopener noreferrer"
                           >

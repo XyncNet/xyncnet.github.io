@@ -44,7 +44,7 @@ const Header = ({}: HeaderProps) => {
                 <div style={{marginLeft: 24}}>
                     <a
                         className={cn("button", styles.button)}
-                        href="https://t.me/XyncNetBot/test"
+                        href="https://t.me/XyncNetBot?startapp"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
