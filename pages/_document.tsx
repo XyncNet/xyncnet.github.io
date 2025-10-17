@@ -21,11 +21,11 @@ class MyDocument extends Document {
                         name="Xync Network"
                     />
                     <meta
-                        content="Xync Network"
+                        content="Xync Network: XyncPAY"
                         property="og:title"
                     />
                     <meta
-                        content="Global payment systems aggregator: Bank & Crypto"
+                        content="Xync PAY Global payment systems aggregator: Bank & Crypto"
                         property="og:description"
                     />
                     <meta
@@ -38,14 +38,14 @@ class MyDocument extends Document {
                     />
                     <meta
                         property="og:site_name"
-                        content="Xync Network"
+                        content="Xync Network: XyncPAY"
                     />
                     <meta
                         content="Xync Network"
                         property="twitter:title"
                     />
                     <meta
-                        content="Global payment systems aggregator: Bank & Crypto"
+                        content="XyncPAY: Global payment systems aggregator: Bank & Crypto"
                         property="twitter:description"
                     />
                     <meta
