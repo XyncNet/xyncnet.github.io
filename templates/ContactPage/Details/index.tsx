@@ -40,12 +40,12 @@ const Details = ({ scrollToRef, t }: DetailsProps) => {
                                 </div>
                             </div>
                         </div>
-                        {/*<div className={styles.item}>*/}
-                        {/*    <div className={styles.category}>Phone number</div>*/}
-                        {/*    <Link href="tel:+660980018735" className={cn("h5", styles.content)}>*/}
-                        {/*        +66 098 001 8735*/}
-                        {/*    </Link>*/}
-                        {/*</div>*/}
+                        <div className={styles.item}>
+                            <div className={styles.category}>Telegram</div>
+                            <Link href="https://t.me/XyncPay" className={cn("h5", styles.content)}>
+                                @XyncPay
+                            </Link>
+                        </div>
                         <Socials
                             socialClassName={styles.social}
                             socials={socials}
