@@ -32,20 +32,20 @@ const Details = ({ scrollToRef, t }: DetailsProps) => {
                         </div>
                         <div className={styles.line}>
                             <div className={styles.item}>
-                                <div className={styles.category}>Address 1</div>
+                                <div className={styles.category}>Address</div>
                                 <div className={cn("h5", styles.content)}>
-                                    <p>1199 Soi Ari 1, Phaya Thai</p>
-                                    <p>Bangkok</p>
-                                    <p>Thailand</p>
+                                    <p>Office 304, DIC-10</p>
+                                    <p>Dubai</p>
+                                    <p>United Arab Emirates</p>
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.item}>
-                            <div className={styles.category}>Phone number</div>
-                            <Link href="tel:+660980018735" className={cn("h5", styles.content)}>
-                                +66 098 001 8735
-                            </Link>
-                        </div>
+                        {/*<div className={styles.item}>*/}
+                        {/*    <div className={styles.category}>Phone number</div>*/}
+                        {/*    <Link href="tel:+660980018735" className={cn("h5", styles.content)}>*/}
+                        {/*        +66 098 001 8735*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                         <Socials
                             socialClassName={styles.social}
                             socials={socials}
