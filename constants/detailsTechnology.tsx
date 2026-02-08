@@ -2,40 +2,35 @@ export const details = [
     {
         content: (
             <>
-                <h2>Scaling solutions, amplified.</h2>
+                <h2>P2P aggregation engine</h2>
                 <p>
-                    Xync is committed to fostering the growth of Web3
-                    applications by providing the infrastructure and security
-                    needed for Web3.
+                    Xync Pay integrates with major P2P platforms — Binance, Bybit, OKX
+                    and others. When you exchange currencies, the system automatically
+                    finds the most profitable offer for your direction and volume.
                 </p>
                 <p>
-                    Xync believes in Web3 for all. Xync is a decentralised
-                    blockchain scaling platform that enables developers.
+                    Fiat-to-crypto, crypto-to-fiat, fiat-to-fiat or crypto-to-crypto —
+                    everything goes through P2P deals, but for you it looks like a simple
+                    exchange. The rate is better than banks and exchange offices thanks to
+                    competition among P2P makers.
                 </p>
             </>
         ),
-        blockquote: {
-            name: "Markus Freeman",
-            position: "Dev Ops - Azious",
-            avatar: "/images/avatar-1.jpg",
-            content:
-                "“It’s not just that is fast, the scalability and ease of use is simply unparalleled, truly mindblowing”",
-        },
         image: "/images/tech-pic-1.png",
         color: "#E87A95",
     },
     {
         content: (
             <>
-                <h2>Resilient, automated layer security</h2>
+                <h2>Transparency and security</h2>
                 <p>
-                    Empower your blockchain security without sacrificing crucial
-                    resources and accessibility to its members.
+                    All transactions, including deposits and withdrawals through external
+                    systems, are recorded on an internal PoS blockchain.
                 </p>
                 <ul>
-                    <li>Fully benefit from scalable network effects</li>
-                    <li>Inherently more secure than all competitors</li>
-                    <li>More open and powerful with 0.001% downtime</li>
+                    <li>Each external payment system is connected via a bridge smart contract</li>
+                    <li>Every transaction is cryptographically signed and verifiable</li>
+                    <li>No uncontrolled token emission — download the blockchain and verify yourself</li>
                 </ul>
             </>
         ),

@@ -14,24 +14,23 @@ export const details = [
                 "en": <>
                     <h2>How to start</h2>
                     <p>
-                        To receive and send money in any currency to any payment system around the world, you only need to:
+                        To send and receive money in any currency to any payment system worldwide, just three steps:
                     </p>
                     <ul>
-                        <li>Fully benefit from scalable network effects</li>
-                        <li>Inherently more secure than all competitors</li>
-                        <li>More open and powerful with 0.001% downtime</li>
+                        <li>Open <Link href="https://t.me/XyncPayBot?startapp" target="_blank" className={styles.document}>@XyncPayBot</Link> in Telegram</li>
+                        <li>Top up your balance via bank transfer, Payeer, Volet or cryptocurrency</li>
+                        <li>Choose the direction and amount — the system will do everything automatically</li>
                     </ul>
                 </>,
                 "ru": <>
                     <h2>Как начать</h2>
                     <p>
-                        Что бы получать и отправлять деньги в любой валюте на любую платежную систему по всему миру, нужно лишь:
+                        Чтобы отправлять и получать деньги в любой валюте на любую платёжную систему по всему миру, нужно всего три шага:
                     </p>
                     <ul>
-                        <li>Зайти в нашего бота или веб-приложение</li>
-                        <li>Пополнить баланс в любой валюте любым способом</li>
-                        <li>Выбрать нужную валюту и платежную систему</li>
-                        <li>Указать реквизиты получателя и срочность</li>
+                        <li>Откройте <Link href="https://t.me/XyncPayBot?startapp" target="_blank" className={styles.document}>@XyncPayBot</Link> в Telegram</li>
+                        <li>Пополните баланс через банковский перевод, Payeer, Volet или криптовалюту</li>
+                        <li>Выберите направление и сумму — система сделает всё автоматически</li>
                     </ul>
                 </>
             },
@@ -47,7 +46,7 @@ export const details = [
             "en": <>
                 <h2 id="top-up">How to top up your balance</h2>
                 <p>
-                    P2P transfer in the <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>bot</Link>, or directly by the one of payment providers
+                    P2P transfer in the <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>bot</Link>, or directly through one of the payment providers. Xync commission — 0%.
                 </p>
                 <div>
                     <Link href="https://account.volet.com/referral/c3778593-4236-4e3a-8bde-216aef3bf724" target="_blank">
@@ -72,7 +71,7 @@ export const details = [
             "ru": <>
                 <h2 id="top-up">Как пополнить баланс</h2>
                 <p>
-                    P2P переводом в <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>боте</Link>, либо напрямую через одного из платежных провайдеров
+                    P2P-переводом в <Link href="https://t.me/XyncPayBot" target="_blank" className={styles.document}>боте</Link>, либо напрямую через одного из платёжных провайдеров. Комиссия Xync — 0%.
                 </p>
                 <div>
                     <Link href="https://account.volet.com/referral/c3778593-4236-4e3a-8bde-216aef3bf724" target="_blank">

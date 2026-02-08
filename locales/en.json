@@ -1,23 +1,23 @@
 {
-  "title": "payments and transfers with NO FEEs",
-  "description": "All banks, payment systems and CEXs",
-  "info": "ronized in one account",
+  "title": "Send money to any country. Exchange at the best rate. 0% fee.",
+  "description": "Xync Pay aggregates P2P platforms",
+  "info": "and finds the best rate automatically. No exchange account needed.",
   "scroll": "SCROLL TO EXPLORE",
   "scroll_contact": "keep in touch",
-  "lets_chat": "Let’s chat",
+  "lets_chat": "Let's chat",
   "contact_us": "Contact us",
-  "contact_info": "Problems, questions, partnership offers? Fill free to fill the form, our support managers waiting your requests 24/7",
+  "contact_info": "Questions, issues or partnership proposals? Fill out the form — our support team responds 24/7",
   "rights": "All rights reserved",
   "terms_of_use": "Terms of use",
   "privacy_policy": "Privacy policy",
   "send": "Send",
   "updates": "UPDATES",
   "more": "Learn more",
-  "join": "Keep in touch on profit deals",
-  "get_more": "To khow to increase your profit: ",
+  "join": "Get alerts on the best exchange rates and hot P2P deals",
+  "get_more": "Learn how it works and how to get the best rate: ",
   "more_link": "how it works",
-  "join_link": "JOIN THE NETWORK",
-  "dev_stage": "Forget the problems with getting currency in any countries",
+  "join_link": "JOIN THE COMMUNITY",
+  "dev_stage": "Transfers and currency exchange without middlemen and hidden fees",
   "dev_title": "That's Why You Don't Need Anything But XYNC Now",
   "nav": {
     "home": "Main",
@@ -30,40 +30,40 @@
   },
   "dev": {
     "profit": {
-      "title": "Profit",
-      "desc": "The bast exchange rate guarantee and 0% fees",
+      "title": "Best rate",
+      "desc": "We automatically find the best P2P offer across Binance, Bybit, OKX and others. The rate is better than any bank or exchange office because you trade directly with P2P makers.",
       "info": ""
     },
     "safe": {
       "title": "Safe",
-      "desc": "All deals are secured. Escrow guarantee. Only verified counterparties",
+      "desc": "All transactions are recorded on an internal blockchain with cryptographic signatures. P2P deals go through the exchange's escrow. Counterparties are verified makers.",
       "info": ""
     },
     "simple": {
       "title": "Simple",
-      "desc": "The process of money receiving or payment is a maximum of 6 clicks",
+      "desc": "Choose currency — Enter amount — Enter details — Send transfer — Done. No registration on exchanges, no KYC on P2P platforms.",
       "info": ""
     },
     "coverage": {
       "title": "Coverage",
-      "desc": "1500+ payment systems and banks, 155 currencies in 231 countries",
+      "desc": "Top up and withdraw through any bank or payment system in your country: Wise, Payeer, Volet and 1500+ more. Xync commission — 0%.",
       "info": ""
     },
     "fast": {
       "title": "Speed",
-      "desc": "Getting the transfer just in One1 MINUTE. ONE, Carl!",
+      "desc": "Average crediting time — 1 minute. You send rubles to the given details, you receive dollars / crypto / any currency to your details.",
       "info": ""
     }
   },
   "stat": {
     "pm": "Payment systems",
-    "cur": "Bank Currencies",
+    "cur": "Bank currencies",
     "country": "Countries",
-    "coin": "Crypto currencies",
+    "coin": "Cryptocurrencies",
     "ex": "Exchanges",
-    "fee": "Commission fees"
+    "fee": "Commission"
   },
-  "css" : {
+  "css": {
     "sbt_logo_width": 110
   }
 }
