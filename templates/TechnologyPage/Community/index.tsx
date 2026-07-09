@@ -4,37 +4,26 @@ import Socials from "@/components/Socials";
 
 import { socials } from "@/constants/socials";
 
-const network = [
-    {
-        value: "$110M",
-        content:
-            "Stay current on the latest Xync project developments, news, and content, updated daily.",
-    },
-    {
-        value: "90M+",
-        content:
-            "Stay current on the latest Xync project developments, news, and content, updated daily. Stay current on the latest Xync project developments, news, and content, updated daily.",
-    },
-    {
-        value: "220K+",
-        content:
-            "Stay current on the latest Xync project developments, news, and content, updated daily.",
-    },
-];
-
 type CommunityProps = {t: any};
 
-const Community = ({t}: CommunityProps) => (
+const Community = ({t}: CommunityProps) => {
+    const network = [
+        { value: t("community.s1v"), content: t("community.s1t") },
+        { value: t("community.s2v"), content: t("community.s2t") },
+        { value: t("community.s3v"), content: t("community.s3t") },
+    ];
+
+    return (
     <div className={cn("section", styles.section)}>
         <div className={cn("container-large", styles.container)}>
             <div className={styles.wrap}>
                 <div className={styles.row}>
                     <div className={styles.details}>
                         <div className={cn("h2", styles.title)}>
-                            XyncNetwork
+                            {t("community.title")}
                         </div>
                         <div className={styles.info}>
-                            Stay current on the latest Xync project.
+                            {t("community.info")}
                         </div>
                     </div>
                     <Socials
@@ -58,6 +47,7 @@ const Community = ({t}: CommunityProps) => (
             </div>
         </div>
     </div>
-);
+    );
+};
 
 export default Community;

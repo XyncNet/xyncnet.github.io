@@ -2,24 +2,24 @@ import cn from "classnames";
 import styles from "./AboutUs.module.sass";
 import Image from "@/components/Image";
 
-const list = [
-    "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
-    "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
-];
+type AboutUsProps = {t: any, locale: string};
 
-type AboutUsProps = {t: any};
+const AboutUs = ({t, locale}: AboutUsProps) => {
+    const list = [t("tech_about.p1"), t("tech_about.p2")];
+    const whitepaper = locale === "ru"
+        ? "/papers/whitepaper.ru.pdf"
+        : "/papers/whitepaper.en.pdf";
 
-const AboutUs = ({t}: AboutUsProps) => (
+    return (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.row}>
                 <div className={styles.wrap}>
                     <div className={cn("h2", styles.title)}>
-                        Stay up to date on everything
+                        {t("tech_about.title")}
                     </div>
                     <div className={styles.info}>
-                        Stay current on the latest Xync project developments,
-                        news, and content, updated daily.
+                        {t("tech_about.info")}
                     </div>
                     <div className={styles.list}>
                         {list.map((item, index) => (
@@ -40,9 +40,14 @@ const AboutUs = ({t}: AboutUsProps) => (
                         >
                             <span>app</span>
                         </a>
-                        <button className={styles.document}>
-                            Read the docs
-                        </button>
+                        <a
+                          className={styles.document}
+                          href={whitepaper}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                            {t("read_docs")}
+                        </a>
                     </div>
                 </div>
                 <div className={styles.preview}>
@@ -56,6 +61,7 @@ const AboutUs = ({t}: AboutUsProps) => (
             </div>
         </div>
     </div>
-);
+    );
+};
 
 export default AboutUs;

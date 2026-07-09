@@ -4,40 +4,26 @@ import Card from "@/components/Card";
 
 import { hexToRgbA } from "@/utils/index";
 
-const list = [
-    {
-        title: "Everything Xync weekly report",
-        status: "TAG LINE",
-        color: "#54C310",
-    },
-    {
-        title: "Everything Xync weekly report",
-        status: "TAG LINE",
-        color: "#6F5BEB",
-    },
-    {
-        title: "Everything Xync weekly report",
-        status: "TAG LINE",
-        color: "#EB5BE4",
-    },
-];
-
 type ValuesProps = {t: any};
 
-const Values = ({t}: ValuesProps) => (
+const Values = ({t}: ValuesProps) => {
+    const list = [
+        { title: t("about.value1"), status: t("about.values_tag"), color: "#54C310" },
+        { title: t("about.value2"), status: t("about.values_tag"), color: "#6F5BEB" },
+        { title: t("about.value3"), status: t("about.values_tag"), color: "#EB5BE4" },
+    ];
+
+    return (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <div className={cn("h3", styles.subtitle)}>Our values</div>
+                    <div className={cn("h3", styles.subtitle)}>{t("about.values_subtitle")}</div>
                     <div className={cn("h2", styles.title)}>
-                        Next-gen for&nbsp;top blockchain
+                        {t("about.values_title")}
                     </div>
                     <div className={styles.content}>
-                        Xync believes in Web3 for all. Xync is a decentralised
-                        blockchain scaling platform that enables developers to
-                        build scalable user-friendly dApps with low transaction
-                        fees without ever sacrificing on security.
+                        {t("about.values_content")}
                     </div>
                     <a
                       className={cn("button", styles.button)}
@@ -81,6 +67,7 @@ const Values = ({t}: ValuesProps) => (
             </div>
         </div>
     </div>
-);
+    );
+};
 
 export default Values;

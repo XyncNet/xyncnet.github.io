@@ -7,10 +7,13 @@ import Socials from "@/components/Socials";
 
 import { footerNavigation, documents } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 type FooterProps = {t: any};
 
-const Footer = ({t}: FooterProps) => (
+const Footer = ({t}: FooterProps) => {
+    const { locale } = useTranslation();
+    return (
     <footer className={styles.footer}>
         <div className={cn("container-wide", styles.container)}>
             <div className={styles.row}>
@@ -45,6 +48,13 @@ const Footer = ({t}: FooterProps) => (
                     2022 - {(new Date()).getFullYear()} © Xync Network.
                 </div>
                 <div className={styles.documents}>
+                    <Link
+                        href={locale === "ru" ? "/papers/whitepaper.ru.pdf" : "/papers/whitepaper.en.pdf"}
+                        className={styles.document}
+                        target={"_blank"}
+                    >
+                        {t("papers.wp")}
+                    </Link>
                     {documents.map((document, index) => (
                         <Link href={document.url} key={index}  className={styles.document} target={"_blank"}>
                             {t(document.title)}
@@ -55,6 +65,7 @@ const Footer = ({t}: FooterProps) => (
             </div>
         </div>
     </footer>
-);
+    );
+};
 
 export default Footer;

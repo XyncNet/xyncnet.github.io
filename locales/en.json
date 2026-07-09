@@ -19,6 +19,62 @@
   "join_link": "JOIN THE COMMUNITY",
   "dev_stage": "Transfers and currency exchange without middlemen and hidden fees",
   "dev_title": "That's Why You Don't Need Anything But XYNC Now",
+  "read_docs": "Read the docs",
+  "tech": {
+    "stage": "technology",
+    "title": "The payment blockchain under XyncPay",
+    "info": "One L1 for three actions — send, request, exchange. Irreversible finality in about 0.3 seconds, 0% fee on the free lane, and a node light enough to live in a phone."
+  },
+  "tech_dev": {
+    "title": "One network, five things it does well",
+    "info": "Best rate, worldwide coverage, one-minute settlement, no accounts, cryptographic safety — all properties of the same payment network."
+  },
+  "community": {
+    "title": "Numbers that are protocol, not marketing",
+    "info": "These don't move with the ad budget — they're properties of the network itself.",
+    "s1v": "~0.3 s",
+    "s1t": "to final, irreversible settlement — about one network round-trip.",
+    "s2v": "80 bytes",
+    "s2t": "a signed transfer on the wire; the whole payment fits in a UUID.",
+    "s3v": "0%",
+    "s3t": "fee on the free lane — the only cost is your bank's own transfer fee."
+  },
+  "tech_about": {
+    "title": "Exchange, offline, and a guarantor who holds nothing",
+    "info": "The payment layer is only the floor. The same primitives give currency exchange, offline payments and a free escrow.",
+    "p1": "Exchange up to 255 currencies — atomic swaps, liquidity pools that clear a whole batch at a single price, and fiat staking. Payments work with no internet too: two phones exchange signed QR codes offline.",
+    "p2": "A pool of three — buyer, seller, guarantor — turns any two signatures into a majority. The guarantor freezes no money and can't steal alone: he'd need a second signature from the very party he set out to rob. Classic escrow charges 1–5% to hold your money; here no one holds it."
+  },
+  "papers": {
+    "title": "Read the papers",
+    "info": "Every decision, weighed against the alternatives — in plain words and in full technical detail.",
+    "wp": "White Paper",
+    "wp_desc": "Goal, relevance, uniqueness and advantages — no formulas, for anyone who wants the whole idea.",
+    "yp": "Yellow Paper",
+    "yp_desc": "The full technical specification: consensus, transaction format, exchange, tokenomics, migration.",
+    "en_label": "English",
+    "ru_label": "Русский"
+  },
+  "faq_title": "Your questions, answered",
+  "about": {
+    "stage": "about us",
+    "title": "Money, without the middlemen",
+    "info": "XyncPay lets anyone send, request and exchange money across borders at the best rate, with 0% fee — built on the Xync Network, a minimalist L1 where a payment is final in about 0.3 seconds.",
+    "counter": "0%",
+    "counter_label": "our fee",
+    "det_h2": "One product, one job",
+    "det_h3": "Send. Request. Exchange.",
+    "det_p1": "XyncPay is a payment app, not a crypto zoo. It does three things — move money to any country, collect money with a payment request, and exchange between 255 currencies — and it does them with no accounts on exchanges and no hidden fees.",
+    "det_p2": "Under the hood runs the Xync Network: a phone-light L1 that finalizes a transfer in one network round-trip, keeps the whole payment in an 80-byte message, and can even settle offline over QR codes.",
+    "det_contact": "contact us",
+    "values_subtitle": "Our values",
+    "values_title": "Payments first, everything else second",
+    "values_content": "Xync solves the blockchain trilemma for one narrow domain — money. Security comes from BFT quorums and fraud proofs, scale from a fastpath that skips consensus and whose latency doesn't grow with load, and decentralization from an open, dynamic validator set anyone can join.",
+    "value1": "0% fee, ~0.3 s finality",
+    "value2": "Runs on a phone — even offline",
+    "value3": "Open validator set, verifiable by anyone",
+    "values_tag": "principle"
+  },
   "nav": {
     "home": "Main",
     "network": "Community",

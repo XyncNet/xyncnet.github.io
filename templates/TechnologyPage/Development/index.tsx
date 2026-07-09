@@ -20,10 +20,10 @@ const Development = ({t}: DevelopmentProps) => (
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
                 <h2 className={cn("h2", styles.title)}>
-                    Xync makes blockchain development accessible for everyone.
+                    {t("tech_dev.title")}
                 </h2>
                 <div className={styles.info}>
-                    Xync&apos;s complete suite of blockchain-scaling solutions.
+                    {t("tech_dev.info")}
                 </div>
             </div>
             <div className={styles.list}>

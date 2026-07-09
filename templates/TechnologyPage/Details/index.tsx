@@ -9,9 +9,10 @@ import { details } from "@/constants/detailsTechnology";
 type DetailsProps = {
     scrollToRef: any;
     t: any;
+    locale: string;
 };
 
-const Details = ({ scrollToRef, t }: DetailsProps) => (
+const Details = ({ scrollToRef, t, locale }: DetailsProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("anchor", styles.anchor)} ref={scrollToRef}></div>
         <div className={cn("container", styles.container)}>
@@ -20,7 +21,7 @@ const Details = ({ scrollToRef, t }: DetailsProps) => (
                     <Item
                         className={styles.item}
                         itemWrapClass={styles.wrap}
-                        item={x}
+                        item={{ ...x, content: (x.content as any)[locale] }}
                         key={index}
                     />
                 ))}

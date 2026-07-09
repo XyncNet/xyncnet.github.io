@@ -13,11 +13,10 @@ const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>about us</div>
-                <div className={cn("h1", styles.title)}>Xync Fintech</div>
+                <div className={styles.stage}>{t("about.stage")}</div>
+                <div className={cn("h1", styles.title)}>{t("about.title")}</div>
                 <div className={styles.info}>
-                    Xync delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain
+                    {t("about.info")}
                 </div>
                 <Scroll
                     className={styles.scroll}

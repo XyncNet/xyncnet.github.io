@@ -29,9 +29,14 @@ const AboutUs = ({t, locale}: AboutUsProps) => (
                             <span>app</span>
                           </a>
                         </div>
-                        <button className={styles.document}>
-                          Read the docs
-                        </button>
+                        <a
+                            className={styles.document}
+                            href={locale === "ru" ? "/papers/whitepaper.ru.pdf" : "/papers/whitepaper.en.pdf"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                          {t("read_docs")}
+                        </a>
                       </div>
                     </div>
                   <div className={styles.preview}>

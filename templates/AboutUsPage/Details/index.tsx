@@ -14,27 +14,18 @@ const Details = ({ scrollToRef, t }: DetailsProps) => (
         <div className={cn("anchor", styles.anchor)} ref={scrollToRef}></div>
         <div className={cn("container", styles.container)}>
             <div className={styles.details}>
-                <div className={styles.counter}>1M</div>
-                <div className={cn("h4", styles.info)}>Xync’s users</div>
+                <div className={styles.counter}>{t("about.counter")}</div>
+                <div className={cn("h4", styles.info)}>{t("about.counter_label")}</div>
             </div>
             <div className={styles.wrap}>
                 <div className={cn("content", styles.content)}>
-                    <h2>Scaling solutions, amplified.</h2>
-                    <h3>Built by developers, for developers.</h3>
-                    <p>
-                        Xync is committed to fostering the growth of Web3
-                        applications by providing the infrastructure and
-                        security needed for Web3.
-                    </p>
-                    <p>
-                        Xync believes in Web3 for all. Xync is a decentralised
-                        blockchain scaling platform that enables developers to
-                        build scalable user-friendly dApps with low transaction
-                        fees without ever sacrificing on security.
-                    </p>
+                    <h2>{t("about.det_h2")}</h2>
+                    <h3>{t("about.det_h3")}</h3>
+                    <p>{t("about.det_p1")}</p>
+                    <p>{t("about.det_p2")}</p>
                 </div>
                 <Link href="/contact" className={cn("button", styles.button)}>
-                    <span>contact us</span>
+                    <span>{t("about.det_contact")}</span>
                 </Link>
             </div>
             <Parallax

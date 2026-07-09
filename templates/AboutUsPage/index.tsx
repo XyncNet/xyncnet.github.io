@@ -2,13 +2,9 @@ import { useRef } from "react";
 import Layout from "@/components/Layout";
 import Main from "./Main";
 import Details from "./Details";
-import Testimonial from "./Testimonial";
-import Team from "./Team";
 import Values from "./Values";
-import Reviews from "@/components/Reviews";
 import JoinCommunity from "@/components/JoinCommunity";
 
-import { reviews } from "@/mocks/reviews";
 import {useTranslation} from "@/contexts/LanguageContext";
 
 const AboutUsPage = () => {
@@ -19,11 +15,13 @@ const AboutUsPage = () => {
         <Layout>
             <Main scrollToRef={scrollToRef} t={t} />
             <Details scrollToRef={scrollToRef} t={t} />
+            <Values t={t} />
+            {/* Скрыто до появления реальных данных: команда, отзывы и цитаты
+                были шаблонными заглушками (Richie Larson / Becky Stal / FauxChain).
             <Testimonial t={t} />
             <Team t={t} />
-            <Values t={t} />
-            <Reviews reviews={reviews} t={t} />
-            <JoinCommunity title="Download our whitepaper" t={t} />
+            <Reviews reviews={reviews} t={t} /> */}
+            <JoinCommunity title={t("join")} t={t} />
         </Layout>
     );
 };

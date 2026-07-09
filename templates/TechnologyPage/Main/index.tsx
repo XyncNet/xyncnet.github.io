@@ -20,13 +20,12 @@ const Main = ({ scrollToRef, t }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>tech</div>
+                <div className={styles.stage}>{t("tech.stage")}</div>
                 <div className={cn("h1", styles.title)}>
-                    Built by developers, for developers.
+                    {t("tech.title")}
                 </div>
                 <div className={styles.info}>
-                    Xync delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain
+                    {t("tech.info")}
                 </div>
             </div>
             <div className={styles.images}>
