@@ -3,7 +3,6 @@ import cn from "classnames";
 import styles from "./MailPage.module.sass";
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
-import Image from "@/components/Image";
 import Item from "@/templates/TechnologyPage/Faq/Item";
 
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -85,12 +84,6 @@ const MailPage = () => {
                 <div className={styles.glow} />
                 <div className={cn("container", styles.heroContainer)}>
                     <div className={styles.head}>
-                        <div className={styles.brand}>
-                            <Image src="/images/xync-white.svg" width={110} height={28} alt="Xync" />
-                            <span className={styles.badge}>
-                                <span>mail</span>
-                            </span>
-                        </div>
                         <h1 className={cn("h1", styles.title)}>
                             {locale === "ru" ? "Своя почта " : "Your own "}
                             <span className={styles.accent}>@xync.net</span>
