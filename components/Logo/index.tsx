@@ -18,8 +18,10 @@ const Logo = ({ className, onClick }: LogoProps) => {
             {pathname === "/mail" ? (
                 <>
                     <Image src="/images/xync-white.svg" width={146} height={37} alt="Xync" />
-                    <span className={cn("button", styles.badge)}>
-                        <span>mail</span>
+                    <span className={styles.badge}>
+                        <span className="button">
+                            <span>mail</span>
+                        </span>
                     </span>
                 </>
             ) : (

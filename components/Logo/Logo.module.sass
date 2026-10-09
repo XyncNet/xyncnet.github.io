@@ -4,5 +4,10 @@
     display: flex
     align-items: center
 
+// плашка MAIL — сама кнопка .button (как APP в шапке) без своих стилей: её margin 2→0 на hover компенсирует рост
+// padding, поэтому отступ и выравнивание — только на обёртке. Центр плашки — по центру букв «YNC» (y 64…174 из 281
+// в xync-white.svg, как PAY в logo.png), а не по центру всего знака (X выше и ниже букв): при высоте 37px это 2.8px вверх
 .badge
-    margin-left: 8px
+    display: flex
+    margin-left: 6px
+    transform: translateY(-2.8px)
