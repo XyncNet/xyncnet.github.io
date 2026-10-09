@@ -8,6 +8,10 @@ export const footerNavigation = [
         url: "/tech",
     },
     {
+        title: "mail",
+        url: "/mail",
+    },
+    {
         title: "blog",
         url: "/blog",
     },

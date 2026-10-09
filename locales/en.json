@@ -82,7 +82,8 @@
     "about": "About us",
     "blog": "Blog",
     "careers": "Careers",
-    "contact": "Contact"
+    "contact": "Contact",
+    "mail": "Mail"
   },
   "dev": {
     "profit": {
@@ -121,5 +122,123 @@
   },
   "css": {
     "sbt_logo_width": 110
+  },
+  "mail": {
+    "stage": "XYNC MAIL",
+    "title": "Your own @xync.net email right in Telegram",
+    "info": "Claim a great address on the xync.net domain and send email without leaving Telegram. Inbox, sending, attachments and instant bot notifications — no passwords, no extra apps.",
+    "login": "Log in with Telegram",
+    "open_bot": "Open @XyncPayBot",
+    "note": [
+      "Free",
+      "No password",
+      "Sign up in 10 seconds"
+    ],
+    "free": "available",
+    "new_mail": "New email",
+    "mails": [
+      [
+        "Bybit",
+        "Confirm your email address",
+        "12:41"
+      ],
+      [
+        "Wise",
+        "Your transfer has arrived",
+        "11:05"
+      ],
+      [
+        "Anna",
+        "Re: Deal documents — attached",
+        "yesterday"
+      ]
+    ],
+    "stat": [
+      [
+        "@xync.net",
+        "your personal address"
+      ],
+      [
+        "200 MB",
+        "of storage"
+      ],
+      [
+        "20 MB",
+        "per attachment"
+      ],
+      [
+        "0%",
+        "mailbox fee"
+      ]
+    ],
+    "feat_stage": "Features",
+    "feat_title": "A real mailbox, not just forwarding",
+    "features": [
+      [
+        "Your @xync.net address",
+        "A short, memorable name on the Xync domain. Use it to sign up for exchanges, banks and services."
+      ],
+      [
+        "Instant notifications",
+        "Every new email arrives as a message from @XyncPayBot — or pops up right in the app if it's open."
+      ],
+      [
+        "Attachments up to 20 MB",
+        "Send and download documents, photos and PDFs. 200 MB of storage for your mail."
+      ],
+      [
+        "Lands in the inbox",
+        "SPF, DKIM, DMARC and TLS are set up on the domain, so your email reaches people — not spam folders."
+      ],
+      [
+        "No passwords",
+        "Log in with Telegram: nothing to forget, nothing to guess. No extra accounts or apps."
+      ],
+      [
+        "All in one place",
+        "Mail lives next to your Xync Pay wallet: inbox, sent and replies in a couple of taps."
+      ]
+    ],
+    "how_stage": "Get started",
+    "how_title": "Three steps to your address",
+    "steps": [
+      [
+        "Log in with Telegram",
+        "One button and you're in Xync Pay. No password needed."
+      ],
+      [
+        "Pick a name",
+        "Type the name you want — we'll instantly show if it's available."
+      ],
+      [
+        "Send and receive",
+        "Send email and get replies with a notification in Telegram."
+      ]
+    ],
+    "faq_title": "FAQ",
+    "faq": [
+      [
+        "Is it really free?",
+        "Yes. One @xync.net mailbox comes with Xync Pay for free."
+      ],
+      [
+        "Can I have several addresses?",
+        "Each client gets one mailbox. To take another address, delete the current one — the freed address stays reserved for you."
+      ],
+      [
+        "Where do I read my mail?",
+        "In Xync Pay: Settings → Mail @xync.net. Works both in Telegram and in a browser."
+      ],
+      [
+        "Where do notifications go?",
+        "To @XyncPayBot. If Xync Pay is open, the notification shows up right in the app."
+      ],
+      [
+        "Will my emails end up in spam?",
+        "The xync.net domain follows modern standards (SPF, DKIM, DMARC, TLS), so mail providers trust our messages."
+      ]
+    ],
+    "final_title": "Claim your address while it's free",
+    "final_info": "Short names go first. Signing up takes a few seconds."
   }
 }
